@@ -1,4 +1,9 @@
 \beamer@endinputifotherversion {3.14pt}
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {1}{Introduction}{1}{0}{1}
 \beamer@sectionintoc {2}{Background}{5}{0}{2}
-\beamer@sectionintoc {3}{Second Section}{18}{0}{3}
+\beamer@sectionintoc {3}{Suppression Technique}{9}{0}{3}
+\beamer@sectionintoc {4}{The Basic Scheme}{14}{0}{4}
+\beamer@sectionintoc {5}{The Symbol-based Trie-Traverse Searching Schema}{16}{0}{5}
+\beamer@sectionintoc {6}{Scheme Evaluation}{19}{0}{6}
+\beamer@sectionintoc {7}{Experiment}{20}{0}{7}
+\beamer@sectionintoc {8}{The End}{25}{0}{8}

@@ -86,7 +86,7 @@
 
 \title[Assignment]{Assignment: 3-Achieving Usable and Privacy-assured Similarity Search over Outsourced Cloud Data} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{Xinyi Li} % Your name
+\author{Author} % Your name
 \institute[DLUT] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 Dalian University of Technology \\
@@ -97,7 +97,7 @@ Dalian University of Technology \\
 
 \begin{document}
 
-
+\section{Introduction}
 \begin{frame}
 \titlepage % Print the title page as the first slide
 \end{frame}
@@ -106,7 +106,6 @@ Dalian University of Technology \\
 	\frametitle{Overview} % Table of contents slide, comment this block out to remove it
 	\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
 \end{frame}
-\section{Introduction}
 \begin{frame}
 	\frametitle{Introduction of the Paper}
 	\bibliography{myreference}    
@@ -201,7 +200,7 @@ Dalian University of Technology \\
 		\item[$Enc(key, \cdot ),Dec(key, \cdot )$]symmetric key based semantic secure encryption/decryption function.
 	\end{description}
 \end{frame}
-
+\section{Suppression Technique}
 \begin{frame}
 	\frametitle{Edit Distance}
 	\begin{columns}
@@ -262,16 +261,17 @@ Dalian University of Technology \\
 \begin{frame}
 	\frametitle{Generating Searching Request}
 	\begin{theorem}
-		The intersection of the similarity sets ${S_{{w_i},d}}$ and ${S_{w,d}}$ for keyword $w_i$ and  search input $w$ is not empty if and only if $ed(w,{w_i}) \le d$.
+		The intersection of the similarity sets \textcolor{blue}{${S_{{w_i},d}}$} and \textcolor{red}{${S_{w,d}}$} for keyword \textcolor{blue}{$w_i$} and  search input \textcolor{red}{$w$} is not empty if and only if $ed(\textcolor{red}{w},\textcolor{blue}{w_i}) \le d$.
 	\end{theorem}
 	
 	\begin{proof}
 		\begin{itemize}
-			\item Completeness(i.e. $ed(w,{w_i}) \le d \to {S_{{w_i},d}} \cap {S_{w,d}} \ne \emptyset $ ):
+			\item Completeness(i.e. $ed(\textcolor{red}{w},\textcolor{blue}{w_i}) \le d \to \textcolor{red}{S_{{w_i},d}} \cap \textcolor{blue}{S_{w,d}} \ne \emptyset $ ):
 			\begin{itemize}
-				\item $\textcolor{red}{w} \to \textcolor{blue}{{w_i}}$ need at most $d$ primitive operations.
-				\item \textcolor{red}{$w$} must be in \textcolor{blue}{${S_{{w_i},d}}$} 
-				\item \textcolor{red}{$w$} is naturally in \textcolor{red}{${S_{w,d}}$}
+				\item $\textcolor{red}{w} \to \textcolor{blue}{{w_i}}$ need at most $d$ primitive operations.\\the result after these operations is marked as $w^*$
+				\item $w^*$ is naturally in \textcolor{red}{${S_{w,d}}$} 
+				\item $w^*$ can be transformed into \textcolor{blue}{${w_i}$}, so it must be in \textcolor{blue}{${S_{{w_i},d}}$} 
+				\item $w' \in \textcolor{blue}{S_{{w_i},d}} \cap \textcolor{red}{S_{w,d}}$
 			\end{itemize}
 		\end{itemize}
 	\end{proof}
@@ -281,9 +281,9 @@ Dalian University of Technology \\
 	\frametitle{Generating Searching Request}
 	\begin{proof}
 		\begin{itemize}
-			\item Soundness(i.e. ${S_{{w_i},d}} \cap {S_{w,d}} \ne \emptyset  \to ed(w,{w_i}) \le d$) \\
+			\item Soundness(i.e. $\textcolor{blue}{S_{{w_i},d}} \cap \textcolor{red}{S_{w,d}} \ne \emptyset  \to ed(\textcolor{red}{w},\textcolor{blue}{w_i}) \le d$) \\
 			\begin{description}
-				\item[${w^*}$]the common element in ${S_{{w_i},d}} \cap {S_{w,d}}$
+				\item[${w^*}$]the common element in $\textcolor{blue}{S_{{w_i},d}} \cap \textcolor{red}{S_{w,d}}$
 			\end{description}
 			\begin{enumerate}
 				\item ${w^*}$ does not contain any wildcard *,\\
@@ -299,143 +299,200 @@ Dalian University of Technology \\
 		\end{itemize}
 	\end{proof}
 \end{frame}
-\begin{frame}
-\frametitle{Paragraphs of Text}
-Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
 
-Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
-\end{frame}
-
-%------------------------------------------------
+\section{The Basic Scheme}
 
 \begin{frame}
-\frametitle{Bullet Points}
-\begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-\end{itemize}
+	\frametitle{The Basic Scheme}
+	\begin{block}{}
+		\begin{description}
+			\item[$\tau $]the maximum size of the similarity keyword set $S_{{w_i},d}$ for ${w_i} \in W$, i.e.,$\tau  = \max {\left\{ {\left| {{S_{{w_i},d}}} \right|} \right\}_{{w_i} \in W}}$ where $\left| W \right| = p$.
+		\end{description}
+	\end{block}
+		\begin{exampleblock}{Prepocessing phase(the owner)}
+			\begin{enumerate}
+				\item  picks random key $x$,$y$,and builds index ${\cal I} = {\left\{ {f(x,w{'_i}),Enc(s{k_{w{'_i}}},FI{D_{{w_i}}})} \right\}_{w{'_i} \in {S_{{w_i},d}},1 \le i \le p}}$, where secret key $s{k_{w{'_i}}} = g(y,w{'_i})$
+				\item insert extra $\tau \left| W \right| - \left| {\cal I} \right|$ dummy entries(using random values) in $\cal I$ for padding.
+				\item randomly shuffles $\cal I$, outsources $\cal I$, encrypted $C$ to cloud.
+			\end{enumerate}
+		\end{exampleblock}
 \end{frame}
 
-%------------------------------------------------
+\begin{frame}{The Basic Scheme}
+	\begin{alertblock}{Searching phase(the user)}
+		\begin{enumerate}
+			\item generates ${{S_{w,d}}}$ from input $w$ via Algorithm 1 and derives ${T_{w'}} = (f(x,w'),g(y,w'))$ for each $w' \in {S_{w,d}}$
+			\item generates $\tau  - \left| {{S_{w,d}}} \right|$ dummy trapdoors by randomly choosing $j$ from ${\left\{ {f(x,j),g(y,j)} \right\}_{1 \le j \le \tau \left| W \right| - \left| {\cal I} \right|}}$
+			\item Cloud server compares all received trapdoors $\left\{ {f(x,w')} \right\}$(and $\left\{ {f(x,j)} \right\}$) with ${\cal I}$ uses the corresponding $\left\{ {g(y,w')} \right\}$ to decrypt the matched entries,  and returns the union of file identifiers, ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed(w,{w_i}) \le d}}$.
+			\item The user retrieves and decrypts the files of interest.
+		\end{enumerate}
+	\end{alertblock}
+	\begin{block}{Improvement}
+		Storage and search cost is ${\cal O}(\tau \left| W \right|)$.\\
+		Bloom Filters can be introduced in to reduce the searching cost to  ${\cal O}( \left| W \right|)$
+	\end{block}
+\end{frame}
 
+\section{The Symbol-based Trie-Traverse Searching Schema}
+
+\begin{frame}{The Symbol-based Trie-Traverse Searching Schema}
+	\begin{block}{All similar words in the trie can be found by a depth-first search}
+		Construct a multi-way tree for storing the similarity keyword elements over a finite symbol set.All trapdoors sharing a common prefix have a common node.	The root is associated with an empty set. 
+	\end{block}
+	\begin{columns}
+		\column{0.45\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{fig2.jpg}
+      \caption{The depth of the tree is $l/\theta$}
+    \end{figure}
+    \column{.45\textwidth}
+    \begin{exampleblock}{}
+    	\begin{itemize}
+    		\item Assume $\Delta  = \left\{ {{\alpha _i}} \right\}$ is a predefined symbol set.
+    		\item $\left| \Delta  \right| = {2^\theta }$
+    		\item each symbol ${\alpha _i} \in \Delta $ is denoted by a $\theta$-bit binary vector.
+    		\item $l$ is the output length of one-way function $f(key, \cdot )$.
+    	\end{itemize}
+    	
+    \end{exampleblock}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{The Symbol-based Trie-Traverse Searching Schema}
+		\begin{columns}
+			\column{.49\textwidth}
+			\begin{exampleblock}{Preprocessing phase(the owner)}
+		\begin{enumerate}
+			\item 	computes ${f(x,w{'_i})}$ for each ${w{'_i} \in {S_{{w_i},d}}}$,${1 \le i \le p}$ together with dummy entries.
+			\item divides them into symbols as ${\alpha _{{i_1}}} \cdots {\alpha _{{i_{l/\theta }}}}$ from $\Delta$.
+			\item builds up a trie ${G_W}$ covering all ${w_i} \in W$.
+			\item attaches ${\left\{ {Enc(s{k_{w{'_i}}},FI{D_{{w_i}}})} \right\}_{w{'_i} \in {S_{{w_i},d}},1 \le i \le p}}$ to $G_W$,\\outsourced it\\ with encrypted collection $C$ to the cloud.
+			
+			
+		\end{enumerate}
+			\end{exampleblock}
+			
+			\column{.44\textwidth}
+			\begin{alertblock}{Searching phase(the user)}
+			 \begin{enumerate}
+			 	\item sends a set of $\tau $ trapdoors(research request): ${\left\{ {{T_{w'}}} \right\}_{w' \in {S_{w,d}}}}$ and $\tau  - \left| {w' \in {S_{w,d}}} \right|$ dummy trapdoors.
+			 	\item the cloud server divides each $f(x,w')$ into a sequence of symbols from $\Delta$. Perform the search over the trie $G_W$.
+			 	\item decrypts matches entries via $g(y,w')$ and return ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed(w,{w_i}) \le d}}$ to the user.
+			 \end{enumerate}
+			\end{alertblock}
+		\end{columns}
+\end{frame}
+
+\begin{frame}{The Symbol-based Trie-Traverse Searching Schema}
+	\begin{figure}
+		\includegraphics[width=0.5\textwidth]{algo2.jpg}
+	\end{figure}
+	The search cost at the server side is only \textcolor{red}{${\cal O}(1)$}(a \textcolor{red}{constant} related to $l/\theta$)
+\end{frame}
+
+\section{Scheme Evaluation}
+
+\begin{frame}{Scheme Evaluation}
+	\begin{table}
+		\begin{tabular}{l l l l}
+			\toprule
+			{} & \textbf{SSE} & \textbf{Basic} & \textbf{Trie-traverse}\\
+			\midrule
+			 \textbf{Preprocessing} & ${\cal O}(\left| W \right|)$ & ${\cal O}(\tau \left| W \right|)$ & ${\cal O}(\tau \left| W \right|)$ \\
+			 \textbf{Index size} & ${\cal O}(\left| W \right|)$ & ${\cal O}(\tau \left| W \right|)$ & ${\cal O}(\tau \left| W \right|)$ \\
+			 \textbf{Search cost} & ${\cal O}(1)$ & ${\cal O}(\tau \left| W \right|)$ & \textcolor{red}{${\cal O}(1)$}  \\
+			 \textbf{Similarity search} & No & Yes & No \\
+			\bottomrule
+		\end{tabular}
+		\caption{Comparison of SSE schemes}
+	\end{table}
+
+\end{frame}
+
+\section{Experiment}
+
+\begin{frame}{Experiment}
+		\begin{block}{Experiment Design}
+			\begin{itemize}
+				\item A real data set: RFC, 5,731 plaintext files, 277MB
+				\item C programming language 
+				\item Local workstation
+				\item Cloud side:Amazon Elastic Computing Cloud(EC2)
+			\end{itemize}
+		\end{block}
+		\begin{exampleblock}{Note}
+			In our experiment the dominant factor affecting the performance is th number of \textcolor{red}{unique keywords} to be indexed, not the \textcolor[rgb]{0.1,0.7,0.2}{file collection size}.
+		\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Cost for Generating Similarity Keyword Set}
+	\begin{figure}
+        \includegraphics[width=0.8\textwidth]{subfig1.jpg}
+        \caption{Similarity set construction time using wildcard-based approach with different choices of edit distance $d$}
+	\end{figure}
+	\begin{block}{}
+		The construction time increases \textcolor{blue}{linearly} with the number of keywords.
+	\end{block}
+\end{frame}
+
+\begin{frame}{Cost For Building Searchable Index}
+    \begin{columns}
+    	\column{.45\textwidth}
+	\begin{figure}
+		\includegraphics[width=\textwidth]{subfig2.jpg}
+		\caption{Time cost for searchable index construction with different choices of edit distance $d$}
+	\end{figure}
+	\column{.5\textwidth}
+	    \begin{alertblock}{}
+	    	For completeness, we also include the index building time of existing SSE as a \textcolor{red}{baseline} for comparison here.
+	    \end{alertblock}
+	    \begin{exampleblock}{}
+	    	The whole index construction is just a one-time cost and can be conducted off-line
+	    \end{exampleblock}
+	\begin{block}{}
+		Similar to the similarity keyword set construction, the index construction time increases \textcolor{blue}{linearly} with the number of distinct keywords.
+	\end{block}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Cost For Building Searchable Index}
+	\begin{columns}
+		\column{.45\textwidth}
+	\begin{figure}
+		\includegraphics[width=\textwidth]{subfig3.jpg}
+		\caption{Storage cost for searchable index construction with different choices of edit distance $d$}	
+	\end{figure}
+	\column{.5\textwidth}
+	\begin{exampleblock}{}
+		Again, our approach consumes more storage space than the baseline due to the \textcolor[rgb]{0.1,0.7,0.2}{multi-way tree structure} and the \textcolor[rgb]{0.1,0.7,0.2}{additional entries} in the index corresponding to the similarity keywords
+	\end{exampleblock}
+	\begin{block}{}
+		But can be deemed as \textcolor{blue}{reasonable} cost of supporting similarity search
+	\end{block}
+	\begin{alertblock}{}
+		"average keyword length" also \textcolor{red}{sightly} influence the time and space cost of building searchable index.
+	\end{alertblock}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Cost For Searching the Index}
+	\begin{figure}
+		\includegraphics[width=.75\textwidth]{subfig4.jpg}
+		%\caption{Evaluation for search cost and file retrieval}
+	\end{figure}
+	\begin{block}{}
+		The proposed  mechanism cost \textcolor{blue}{constant} search time.
+	\end{block}
+	\begin{exampleblock}{}
+		Cost for results retrieval and decryption is plainly determined by the \textcolor[rgb]{0.1,0.7,0.2}{number} of retrieved results
+	\end{exampleblock}
+\end{frame}
+
+
+%------------------------------------------------
+\section{The End}
 \begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-\end{block}
-
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
-\end{block}
-
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-\end{block}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
-\end{frame}
-
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{References}
-\footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
-\end{thebibliography}
-}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\Huge{\centerline{The End}}
+\Huge{\centerline{Thanks}}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
