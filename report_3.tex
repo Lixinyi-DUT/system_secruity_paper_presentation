@@ -74,26 +74,48 @@
 %\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
 
 %\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+
 }
+
+\setbeamertemplate{footline}{%
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.45\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\usebeamerfont{section in head/foot}\insertsection
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.22\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+			\usebeamerfont{title in head/foot}\insertshorttitle
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.3333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+		\end{beamercolorbox}}%
+		\vskip0pt%
+	}
+
+
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{amsmath}
 \usepackage{mathrsfs}
 \bibliographystyle{ieeetr}
+\definecolor{bazaar}{rgb}{0.6, 0.47, 0.48}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Assignment]{Assignment: 3-Achieving Usable and Privacy-assured Similarity Search over Outsourced Cloud Data} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Assignment3]{Assignment: 3-Achieving Usable and Privacy-assured Similarity Search over Outsourced Cloud Data} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{Author} % Your name
+%\author{Author} % Your name
+\author[Author, Another, Another] % (optional, use only with lots of authors)
+{Dehai Wang \and \\Siyu Huang\and \\ Xinyi Li}
 \institute[DLUT] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 Dalian University of Technology \\
 \textit{Assignment of System Security} % Your institution for the title page
 \medskip % Your email address
 }
-\date{\today} % Date, can be changed to a custom date
+\date{April 1, 2015} % Date, can be changed to a custom date
 
 \begin{document}
 
@@ -271,7 +293,7 @@ Dalian University of Technology \\
 				\item $\textcolor{red}{w} \to \textcolor{blue}{{w_i}}$ need at most $d$ primitive operations.\\the result after these operations is marked as $w^*$
 				\item $w^*$ is naturally in \textcolor{red}{${S_{w,d}}$} 
 				\item $w^*$ can be transformed into \textcolor{blue}{${w_i}$}, so it must be in \textcolor{blue}{${S_{{w_i},d}}$} 
-				\item $w' \in \textcolor{blue}{S_{{w_i},d}} \cap \textcolor{red}{S_{w,d}}$
+				\item $w^* \in \textcolor{blue}{S_{{w_i},d}} \cap \textcolor{red}{S_{w,d}}$
 			\end{itemize}
 		\end{itemize}
 	\end{proof}
@@ -390,6 +412,137 @@ Dalian University of Technology \\
 	The search cost at the server side is only \textcolor{red}{${\cal O}(1)$}(a \textcolor{red}{constant} related to $l/\theta$)
 \end{frame}
 
+\section{Security Analysis}
+
+\begin{frame}{Security Gurantee}
+	\begin{block}{}
+		\begin{itemize}
+			\item Our searching mechanism always returns the \textcolor{bazaar}{same} search results for the \textcolor{bazaar}{same} search requests.
+			\item The cloud server can build up \textcolor[rgb]{0.0, 0.26, 0.15}{access patterns} and \textcolor[rgb]{0.0, 0.26, 0.15}{search patterns} along the interactions with users.
+		\end{itemize}
+	\end{block}
+	
+	\begin{alertblock}{}
+		Thus, the security guarantee should ensure that nothing beyond the \textcolor[rgb]{0.0, 0.26, 0.15}{pattern} and
+		\textcolor[rgb]{0.0, 0.26, 0.15}{the outcome of a series of search requests} be leaked.
+	\end{alertblock}
+	\begin{block}{The \textcolor{red}{non-adaptive} semantic security guarantee}
+		The \textcolor{red}{non-adaptive} attack model only considers adversaries (i.e., the cloud server) that \textcolor{red}{cannot choose} search requests based on the trapdoors and search outcomes of previous searches. (Since only users with authorized secret keys can generate search trapdoors.)
+	\end{block}
+\end{frame}
+
+\begin{frame}{Notation}
+\begin{description}
+	\item[History] an interaction between the user and the cloud
+	server, determined by a file collection $C$ and a set of keywords
+	searched by the user, denoted as ${H_q} = (C,{w^1}, \ldots ,{w^q})$.
+	\item[View] given a history ${H_q}$ under some secret key $K$, the cloud
+	server can only see an encrypted version of the history, i.e., the
+	view ${V_K}({H_q})$, including: the index $\cal I$ of $C$; the trapdoors of the
+	queried keywords ${\left\{ {{T_{w'}}} \right\}_{w' \in \left\{ {{S_{{w^1},d}}, \ldots ,{S_{{w^q},d}}} \right\}}}$ ; and the encrypted
+	file collection of $C$, denoted as $\left\{ {{e_1}, \ldots ,{e_n}} \right\}$.
+	\item[Trace] given a history ${H_q}$ and an encrypted file collection $C$, the trace of ${Tr({H_q})}$ captures the precise information to be learned by cloud server, including: the size of the encrypted files $\left\{ {\left| {{F_1}} \right|, \ldots ,\left| {{F_n}} \right|} \right\}$; the outcome of each search, ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed({w_i},{w^j}) \le d}}$ for $1 \le j \le q$; and the pattern ${\prod_q}$ for each search. Here ${\prod_q}$ is a symmetric matrix where the entry ${\prod _q}[i,j]$ stores the intersection ${\left\{ {{T_{w'}}} \right\}_{w' \in {S_{{w^i},d}} \cap {S_{{w^j},d}}}}$.
+\end{description}
+\end{frame}
+
+\begin{frame}{Security Analysis}
+	\begin{exampleblock}{Security Strength}
+		Given two histories with the identical trace, the cloud server is not able to distinguish the views of the two histories.\\
+		In other words, the cloud server cannot extract additional knowledge beyond the information we are willing to leak (i.e., the trace) and thus our mechanism is secure.
+	\end{exampleblock}
+	\begin{theorem}
+		Our similarity keyword search schemes meet the non-adaptive semantic security.
+	\end{theorem}
+	\begin{exampleblock}{}
+		Due to space limitation, we only give the proof for the basic approach.\\
+		The proof of other schemes follow similarly.
+	\end{exampleblock}
+	
+\end{frame}
+
+\begin{frame}{Proof}
+	\begin{definition}[Simulator $\cal S$]
+		Given ${Tr({H_q})}$, it can simulate a view $V_q^*$ indistinguishable from cloud server's view ${V_K}({H_q})$ with probability negligibly close to 1, for any $q \in \mathbb{N}$, any ${H_q}$ and randomly chosen $K$.
+	\end{definition}
+	\begin{itemize}
+		\item $l$: the security parameter of the RBF $f(key, \cdot )$ \textcolor{blue}{(output length)}
+		\item  $\tau  = \max {\left\{ {\left| {{S_{{w_i},d}}} \right|} \right\}_{{w_i} \in W}}$
+		\item $\left| W \right|$, and size of padded ${FI{D_{{w_i}}}}$ are known to $\cal S$	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Proof}
+	\begin{itemize}
+	\item For $q=0$, $\cal S$ builds $V_0^* = \left\{ {e_1^*,e_2^*, \ldots ,e_n^*,{{\cal I}^*}} \right\}$ such that $e_i^*$ is randomly chosen from ${\left\{ {0,1} \right\}^{\left| {{F_i}} \right|}}$ for $1 \le i \le n$.
+	\item Let ${{\cal I}^*} = ({T^*},{C^*})$.\\
+	${T^*}[i]$ and ${C^*}[i]$ : the $i$-th row entry in ${T^*}$ and ${C^*}$.
+	\begin{itemize}
+		\item To generate ${T^*}$,for $1 \le i \le \tau \left| W \right|$, $\cal S$ selects a random $t_i^* \in {\left\{ {0,1} \right\}^l}$, and sets ${T^*}[i] = t_i^*$.
+		\item To generate ${C^*}$,for $1 \le i \le \tau \left| W \right|$, $\cal S$ selects a random $c_i^* \in {\left\{ {0,1} \right\}^{\left| {FI{D_{{w_i}}}} \right|}}$, and sets ${C^*}[i] = c_i^*$.
+	\end{itemize}
+	\item Due to the semantic security of the symmetric encryption, no probabilistic polynomial-time (P.P.T.) adversary can distinguish between ${e_i}$ and $e_i^*$, or between ${Enc(s{k_{w{'_i}}},FI{D_{{w_i}}})}$ and $c_i$.
+	\item Also due to the pseudo-randomness of the trapdoor function, no P.P.T. adversary can distinguish between $f(x,w{'_i})$ and a random string $t_i^*$.
+	\item Thus, ${V_K}({H_0})$and $V_0^*$ are indistinguishable.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Proof}
+	\begin{itemize}
+		\item 	For $q \ge 1$, $\cal S$ builds $V_q^* = \left\{ {e_1^*,e_2^*, \ldots ,e_n^*,{{\cal I}^*},{{\left\{ {T_{w'}^*} \right\}}_{w' \in \left\{ {{S_{{w^1},d}}, \ldots ,{S_{{w^q},d}}} \right\}}}} \right\}$
+				\begin{itemize}
+					\item $e_i^*$ is still randomly drawn from ${\left\{ {0,1} \right\}^{\left| {{F_i}} \right|}}$ for $1 \le i \le n$.
+				\end{itemize}
+		\item Let ${{\cal I}^*} = ({T^*},{C^*})$.
+        \item the result ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed({w_i},{w^j}) \le d}}$ for the $j$-th search request is the union of file identifiers in the matched entries of the index
+		\begin{itemize}
+			\item ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed({w_i},{w^j}) \le d}}$ can be rewritten as $\bigcup\nolimits_{k = 1}^{{\alpha _j}} {FI{D_{{w_{j,k}}}}} $
+			\item ${\alpha _j}$ denotes the number of matches for the $j$-th search
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Proof}
+	\begin{itemize}
+		\item To build the first trapdoor set ${\left\{ {T_{w'}^*} \right\}_{w' \in \left\{ {{S_{{w^1},d}}} \right\}}}$ for search input $w^1$,the simulator $\cal S$ does the following:
+		\begin{itemize}
+			\item Select ${\alpha_1}$ random strings $t_{1,1}^*, \ldots ,t_{1,{\alpha _1}}^* \in {\left\{ {0,1} \right\}^l}$ and set them to ${\alpha _1}$ non-assigned entries ${T^*}[{i_{1,1}}], \ldots ,{T^*}[{i_{1,{\alpha _1}}}]$.
+			\item Select ${\alpha_1}$ random strings $\rho _{1,1}^*, \ldots \rho _{1,{\alpha _i}}^* \in {\left\{ {0,1} \right\}^l}$ and set ${C^*}[{i_{1,k}}] = Enc(\rho _{1,k}^*,FI{D_{{w_i},k}})$ for $1 \le k \le {\alpha _1}$
+			\item Set remaining $\tau  - {\alpha _1}$ trapdoors as random value pairs
+			$(t_{1,k}^*,\rho _{1,k}^*) \in {\left\{ {0,1} \right\}^l} \times {\left\{ {0,1} \right\}^l}$ for ${\alpha _1} \le k \le \tau $ .
+		\end{itemize}
+		\item For trapdoor simulation of $w^j$ for $2 \le j \le q$, if $\left| {{\prod _q}[i,j]} \right| = 0$ for all $i < j$, the simulator repeats the same process as
+		simulating trapdoors for $w^1$.
+		\item Otherwise, let ${\beta _j}$ denotes the number of file identifier list in ${\left\{ {FI{D_{{w_j},k}}} \right\}_{1 \le k \le {\alpha _j}}}$, which have
+		been assigned already in ${\left\{ {FI{D_{{w_i},k}}} \right\}_{1 \le k \le {\alpha _i},i < j}}$.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Proof}
+	Next, $\cal S$ does:
+	\begin{itemize}
+		\item Choose ${\beta _j}$ trapdoors from existing ${\left\{ {T_{w'}^*} \right\}_{w' \in \left\{ {{s_{{w^i},d}}} \right\},i < j}}$ that match to the common ${\beta _j}$ file identifier list of ${\left\{ {FI{D_{{w_j},k}}} \right\}_{1 \le k \le {\alpha _j}}} \cap (\bigcup\nolimits_{i = 1}^{j - 1} {{{\left\{ {FI{D_{{w_i},k}}} \right\}}_{1 \le k \le {\alpha _i}}}} )$, and assign them to trapdoor simulation of $w^j$.
+		\item If $\alpha_j > \beta_j$, the simulator $\cal S$ builds $\alpha_j - \beta_j$ entries in ${{{\cal I}^*}}$ via the same process as simulating trapdoors for $W^1$.
+		\item $\cal S$ further checks ${{\prod _q}[i,j]}$ for $i < j$, finds from already generated ${\left\{ {T_{w'}^*} \right\}_{w' \in \left\{ {{s_{{w^i},d}}} \right\},i < j}}$ the common ${\gamma _j}$ trapdoors that do not have matched entries in index ${{{\cal I}^*}}$, and assigns them to the current trapdoor simulation of $w^j$.
+		\item Set remaining $\tau  - {\alpha _j} - {\gamma _j}$ trapdoors as random value pairs from ${\left\{ {0,1} \right\}^l} \times {\left\{ {0,1} \right\}^l}$.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{proof}
+	Thus
+	\begin{proof}
+		\begin{itemize}
+			\item The correctness of the constructed view is easy to demonstrate by searching on ${{{\cal I}^*}}$ via ${\left\{ {T_{w'}^*} \right\}_{w' \in {s_{{w^i},d}}}}$ for each $i$.
+			\item There is no P.P.T. adversary can distinguish between $V_q^*$ and ${V_K}({H_q})$
+			\item In particular, the simulated encrypted ciphertext
+			is indistinguishable due to the semantic security of the
+			symmetric encryption.
+			\item The indistinguishability of index and
+			trapdoors is based on the indistinguishability of the pseudorandom
+			function output and a random string.
+		\end{itemize}
+	\end{proof}
+\end{frame}
+
 \section{Scheme Evaluation}
 
 \begin{frame}{Scheme Evaluation}
@@ -491,7 +644,7 @@ Dalian University of Technology \\
 
 %------------------------------------------------
 \section{The End}
-\begin{frame}
+\begin{frame}{The End}
 \Huge{\centerline{Thanks}}
 \end{frame}
 

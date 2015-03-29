@@ -4,6 +4,7 @@
 \beamer@sectionintoc {3}{Suppression Technique}{9}{0}{3}
 \beamer@sectionintoc {4}{The Basic Scheme}{14}{0}{4}
 \beamer@sectionintoc {5}{The Symbol-based Trie-Traverse Searching Schema}{16}{0}{5}
-\beamer@sectionintoc {6}{Scheme Evaluation}{19}{0}{6}
-\beamer@sectionintoc {7}{Experiment}{20}{0}{7}
-\beamer@sectionintoc {8}{The End}{25}{0}{8}
+\beamer@sectionintoc {6}{Security Analysis}{19}{0}{6}
+\beamer@sectionintoc {7}{Scheme Evaluation}{28}{0}{7}
+\beamer@sectionintoc {8}{Experiment}{29}{0}{8}
+\beamer@sectionintoc {9}{The End}{34}{0}{9}

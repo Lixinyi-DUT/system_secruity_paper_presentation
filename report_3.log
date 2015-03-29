@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  28 MAR 2015 21:08
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  29 MAR 2015 20:55
 entering extended mode
 **report_3.tex
 
@@ -705,24 +705,33 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 111.
+
+
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
 t_3.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -759,7 +768,7 @@ LaTeX Font Info:    ... okay on input line 98.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 98.
+Package hyperref Info: Link coloring OFF on input line 120.
 
 (D:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -769,9 +778,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count159
 )
-LaTeX Info: Redefining \ref on input line 98.
-LaTeX Info: Redefining \pageref on input line 98.
-LaTeX Info: Redefining \nameref on input line 98.
+LaTeX Info: Redefining \ref on input line 120.
+LaTeX Info: Redefining \pageref on input line 120.
+LaTeX Info: Redefining \nameref on input line 120.
 
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
 t_3.out)
@@ -779,47 +788,47 @@ t_3.out)
 t_3.out)
 \@outlinefile=\write5
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 98.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 120.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 98.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 120.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 98.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 98.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 98.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 98.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 98.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 98.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 98.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 98.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 98.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 98.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 120.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 98.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 98.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 120.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 98.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 120.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 98.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 98.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 98.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 98.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 98.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 120.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 98.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 120.
 
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\translator\dicts\translator-basic-diction
 ary\translator-basic-dictionary-English.dict
@@ -845,12 +854,17 @@ Dictionary: translator-numbers-dictionary, Language: English
 onary\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 98.
+LaTeX Info: Redefining \includegraphics on input line 120.
 
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
 t_3.nav)
 Requested font "cmss8" at 6.0pt
  -> cmss8
+
+Overfull \hbox (1.20033pt too wide) in paragraph at lines 120--120
+[][]  
+ []
+
 Requested font "cmss12" at 14.4pt
  -> cmss12
 Requested font "cmss8" at 8.0pt
@@ -858,17 +872,26 @@ Requested font "cmss8" at 8.0pt
 Requested font "cmssi8" at 8.0pt
  -> cmssi8
 
-
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 103.
+(Font)              size <5> substituted on input line 125.
 
 Requested font "cmss8" at 5.0pt
  -> cmss8
+
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
 [1
 
 ]
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
-t_3.toc) [2
+t_3.toc)
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[2
 
 ]
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
@@ -880,6 +903,10 @@ File: beamericonarticle.pdf Graphic file (type QTm)
 Requested font "cmssi10" at 10.95pt
  -> cmssi10
 )
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
 [3
 
 ]
@@ -887,7 +914,12 @@ Requested font "cmss12" at 12.0pt
  -> cmss12
 Requested font "cmssbx10" at 10.95pt
  -> cmssbx10
- [4
+
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[4
 
 ]
 File: fig1.jpg Graphic file (type QTm)
@@ -912,7 +944,7 @@ Requested font "cmex8" at 8.0pt
  -> cmex8
 Requested font "cmex7" at 6.0pt
  -> cmex7
-LaTeX Font Info:    Try loading font information for U+msa on input line 152.
+LaTeX Font Info:    Try loading font information for U+msa on input line 174.
  (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
@@ -922,7 +954,7 @@ Requested font "msam10" at 8.0pt
  -> msam10
 Requested font "msam7" at 6.0pt
  -> msam7
-LaTeX Font Info:    Try loading font information for U+msb on input line 152.
+LaTeX Font Info:    Try loading font information for U+msb on input line 174.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -933,7 +965,7 @@ Requested font "msbm10" at 8.0pt
  -> msbm10
 Requested font "msbm7" at 6.0pt
  -> msbm7
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 152.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 174.
 
 (D:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -946,34 +978,69 @@ Requested font "rsfs5" at 6.0pt
  -> rsfs5
 Requested font "cmssi8" at 6.0pt
  -> cmssi8
- [5
 
-] [6
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
 
-] [7
-
-] [8
+[5
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 222
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[6
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[7
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[8
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 244
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 222.
+LaTeX Font Info:    No file OMScmss.fd. on input line 244.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 222.
+(Font)              for symbol `textbraceleft' on input line 244.
+
+
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
 
 [9
 
 ]
 Missing character: There is no ‘ in font cmss10!
 Missing character: There is no ’ in font cmss10!
- [10
+
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[10
 
 ]
 File: algo1.jpg Graphic file (type QTm)
- <use  "algo1.jpg" > [11
+ <use  "algo1.jpg" >
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[11
 
 ]
 Requested font "cmss8" at 7.0pt
@@ -1006,75 +1073,221 @@ Requested font "cmssi8" at 7.0pt
  -> cmssi8
 Requested font "cmssi8" at 5.0pt
  -> cmssi8
- [12
 
-] [13
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
 
-] [14
+[12
 
-] [15
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[13
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[14
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[15
 
 ]
 File: fig2.jpg Graphic file (type QTm)
  <use  "fig2.jpg" >
-Overfull \vbox (6.98253pt too high) detected at line 359
+Overfull \vbox (6.98253pt too high) detected at line 381
+ []
+
+
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
  []
 
 [16
 
 ]
-Overfull \hbox (9.20612pt too wide) in paragraph at lines 384--384
+Overfull \hbox (9.20612pt too wide) in paragraph at lines 406--406
 []$ 
  []
 
 
-Overfull \vbox (3.42282pt too high) detected at line 384
+Overfull \vbox (3.42282pt too high) detected at line 406
+ []
+
+
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
  []
 
 [17
 
 ]
 File: algo2.jpg Graphic file (type QTm)
- <use  "algo2.jpg" > [18
+ <use  "algo2.jpg" >
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
 
-] [19
+[18
 
-] [20
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[19
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[20
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[21
+
+]
+Requested font "cmmi12" at 12.0pt
+ -> cmmi12
+Requested font "cmsy10" at 12.0pt
+ -> cmsy10
+Requested font "cmex10" at 12.0pt
+ -> cmex10
+Requested font "msam10" at 12.0pt
+ -> msam10
+Requested font "msbm10" at 12.0pt
+ -> msbm10
+Requested font "rsfs10" at 12.0pt
+ -> rsfs10
+Requested font "cmssi12" at 12.0pt
+ -> cmssi12
+
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[22
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[23
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[24
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[25
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[26
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[27
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[28
+
+]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[29
 
 ]
 File: subfig1.jpg Graphic file (type QTm)
- <use  "subfig1.jpg" > [21
+ <use  "subfig1.jpg" >
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[30
 
 ]
 File: subfig2.jpg Graphic file (type QTm)
+ <use  "subfig2.jpg" >
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
 
-<use  "subfig2.jpg" > [22
+[31
 
 ]
 File: subfig3.jpg Graphic file (type QTm)
- <use  "subfig3.jpg" > [23
+ <use  "subfig3.jpg" >
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[32
 
 ]
 File: subfig4.jpg Graphic file (type QTm)
  <use  "subfig4.jpg" >
-[24
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[33
 
 ]
 Requested font "cmss17" at 24.88pt
  -> cmss17
- [25
+
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[34
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 500.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 500.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 653.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 653.
 
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
 t_3.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 500.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 500.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 653.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 653.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1085,12 +1298,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16762 strings out of 430478
- 297067 string characters out of 3191502
- 409760 words of memory out of 3000000
- 19531 multiletter control sequences out of 15000+200000
- 15516 words of font info for 60 fonts, out of 3000000 for 9000
+ 16796 strings out of 430478
+ 297444 string characters out of 3191502
+ 410429 words of memory out of 3000000
+ 19563 multiletter control sequences out of 15000+200000
+ 17287 words of font info for 67 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,16n,63p,397b,1036s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,16n,63p,628b,1036s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on report_3.pdf (25 pages).
+Output written on report_3.pdf (34 pages).
