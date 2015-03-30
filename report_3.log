@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  29 MAR 2015 20:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  30 MAR 2015 19:37
 entering extended mode
 **report_3.tex
 
@@ -15,20 +15,20 @@ ing presentations (rcs-revision 70f9d8411e54)
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbasemodes.sty
 Package: beamerbasemodes 2010/05/01 (rcs-revision efa082c6111d)
 \beamer@tempbox=\box26
-\beamer@tempcount=\count80
-\c@beamerpauses=\count81
+\beamer@tempcount=\count79
+\c@beamerpauses=\count80
 
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbasedecode.sty
 Package: beamerbasedecode 2010/05/01 (rcs-revision efa082c6111d)
-\beamer@slideinframe=\count82
-\beamer@minimum=\count83
+\beamer@slideinframe=\count81
+\beamer@minimum=\count82
 )
 \beamer@commentbox=\box27
-\beamer@modecount=\count84
+\beamer@modecount=\count83
 )
 (D:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 \headheight=\dimen102
 \headdp=\dimen103
@@ -54,24 +54,24 @@ Package ifpdf Info: pdfTeX in PDF mode is not detected.
 \beamer@sectionbox=\box31
 \beamer@logobox=\box32
 \beamer@linebox=\box33
-\beamer@sectioncount=\count85
-\beamer@subsubsectionmax=\count86
-\beamer@subsectionmax=\count87
-\beamer@sectionmax=\count88
-\beamer@totalheads=\count89
-\beamer@headcounter=\count90
-\beamer@partstartpage=\count91
-\beamer@sectionstartpage=\count92
-\beamer@subsectionstartpage=\count93
-\beamer@animationtempa=\count94
-\beamer@animationtempb=\count95
-\beamer@xpos=\count96
-\beamer@ypos=\count97
-\beamer@showpartnumber=\count98
-\beamer@currentsubsection=\count99
-\beamer@coveringdepth=\count100
-\beamer@sectionadjust=\count101
-\beamer@tocsectionnumber=\count102
+\beamer@sectioncount=\count84
+\beamer@subsubsectionmax=\count85
+\beamer@subsectionmax=\count86
+\beamer@sectionmax=\count87
+\beamer@totalheads=\count88
+\beamer@headcounter=\count89
+\beamer@partstartpage=\count90
+\beamer@sectionstartpage=\count91
+\beamer@subsectionstartpage=\count92
+\beamer@animationtempa=\count93
+\beamer@animationtempb=\count94
+\beamer@xpos=\count95
+\beamer@ypos=\count96
+\beamer@showpartnumber=\count97
+\beamer@currentsubsection=\count98
+\beamer@coveringdepth=\count99
+\beamer@sectionadjust=\count100
+\beamer@tocsectionnumber=\count101
 
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbaseoptions.sty
 Package: beamerbaseoptions 2010/04/27 (rcs-revision 982469101dd6)
@@ -93,9 +93,9 @@ Package ifvtex Info: VTeX not detected.
 (D:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count103
-\Gm@cntv=\count104
-\c@Gm@tempcnt=\count105
+\Gm@cnth=\count102
+\Gm@cntv=\count103
+\c@Gm@tempcnt=\count104
 \Gm@bindingoffset=\dimen119
 \Gm@wd@mp=\dimen120
 \Gm@odd@mp=\dimen121
@@ -106,11 +106,9 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen126
 \Gm@dimlist=\toks15
 
-(D:\CTEX\MiKTeX\tex\xelatex\xetexconfig\geometry.cfg))
+(D:\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
 (D:\CTEX\MiKTeX\tex\latex\base\size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
-Requested font "cmr10" at 10.95pt
- -> cmr10
 )
 (D:\CTEX\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
 (D:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
@@ -125,11 +123,18 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (D:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: xetex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(D:\CTEX\MiKTeX\tex\xelatex\xetex-def\xetex.def
-File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
+(D:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
+(D:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(D:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
 ))
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
@@ -176,16 +181,13 @@ Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 (D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-xetex.def on input line 900.
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
 
-(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-xetex.def
-File: pgfsys-xetex.def 2010/02/16  (rcs-revision 1.3)
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
 
 (D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
-)
-(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf-via-dvi.def
-File: pgfsys-common-pdf-via-dvi.def 2008/05/19  (rcs-revision 1.7)
 )))
 (D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
@@ -201,8 +203,9 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (D:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -327,8 +330,8 @@ Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
 (D:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
 Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
@@ -343,10 +346,9 @@ Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
 Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
 Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode not found.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
 Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
 Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
@@ -388,9 +390,9 @@ Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
 Package hyperref Info: Bookmarks ON on input line 4284.
 \c@Hy@tempcnt=\count121
 
-(D:\CTEX\MiKTeX\tex\xelatex\xetexurl\url.sty
+(D:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
 \Urlmuskip=\muskip10
-Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4637.
 \Fld@menulength=\count122
@@ -412,35 +414,18 @@ Package hyperref Message: Stopped early.
 
 )
 
-Package hyperref Message: Driver (autodetected): hxetex.
+Package hyperref Message: Driver (autodetected): hpdftex.
 
-(D:\CTEX\MiKTeX\tex\latex\hyperref\hxetex.def
-File: hxetex.def 2012/02/06 v6.82o Hyperref driver for XeTeX
-
-(D:\CTEX\MiKTeX\tex\latex\hyperref\puenc.def
-File: puenc.def 2012/02/06 v6.82o Hyperref: PDF Unicode definition (HO)
-)
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\stringenc.sty
-Package: stringenc 2010/03/01 v1.8 Converts strings between encodings (HO)
-)
-\pdfm@box=\box40
-\c@Hy@AnnotLevel=\count124
-\HyField@AnnotCount=\count125
-\Fld@listcount=\count126
-\c@bookmark@seq@number=\count127
+(D:\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def
+File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
+\Fld@listcount=\count124
+\c@bookmark@seq@number=\count125
 
 (D:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
-(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
-
-(rerunfilecheck)             Therefore file contents cannot be checked efficien
-tly
-(rerunfilecheck)             and the loading of the package is aborted.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
 ))
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
-File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
-)
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbaserequires.sty
 Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
 
@@ -476,36 +461,36 @@ Package: beamerbasetwoscreens 2010/05/01  (rcs-revision efa082c6111d)
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbaseoverlay.sty
 Package: beamerbaseoverlay 2012/02/22  (rcs-revision 1e3e174835fb)
-\beamer@argscount=\count128
+\beamer@argscount=\count126
 \beamer@lastskipcover=\skip44
-\beamer@trivlistdepth=\count129
+\beamer@trivlistdepth=\count127
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbasetitle.sty
 Package: beamerbasetitle 2010/09/21  (rcs-revision f0446ed0b6ae)
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbasesection.sty
 Package: beamerbasesection 2012/02/22  (rcs-revision 9a2581f9efb6)
-\c@lecture=\count130
-\c@part=\count131
-\c@section=\count132
-\c@subsection=\count133
-\c@subsubsection=\count134
+\c@lecture=\count128
+\c@part=\count129
+\c@section=\count130
+\c@subsection=\count131
+\c@subsubsection=\count132
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbaseframe.sty
 Package: beamerbaseframe 2011/09/12  (rcs-revision 70f9d8411e54)
-\beamer@framebox=\box41
-\beamer@frametitlebox=\box42
-\beamer@zoombox=\box43
-\beamer@zoomcount=\count135
-\beamer@zoomframecount=\count136
+\beamer@framebox=\box40
+\beamer@frametitlebox=\box41
+\beamer@zoombox=\box42
+\beamer@zoomcount=\count133
+\beamer@zoomframecount=\count134
 \beamer@frametextheight=\dimen164
-\c@subsectionslide=\count137
+\c@subsectionslide=\count135
 \beamer@frametopskip=\skip45
 \beamer@framebottomskip=\skip46
 \beamer@frametopskipautobreak=\skip47
 \beamer@framebottomskipautobreak=\skip48
 \beamer@envbody=\toks24
-\c@framenumber=\count138
+\c@framenumber=\count136
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbaseverbatim.sty
 Package: beamerbaseverbatim 2011/09/12  (rcs-revision 70f9d8411e54)
@@ -513,22 +498,22 @@ Package: beamerbaseverbatim 2011/09/12  (rcs-revision 70f9d8411e54)
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbaseframesize.sty
 Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
-\beamer@splitbox=\box44
-\beamer@autobreakcount=\count139
+\beamer@splitbox=\box43
+\beamer@autobreakcount=\count137
 \beamer@autobreaklastheight=\dimen165
 \beamer@frametitletoks=\toks25
 \beamer@framesubtitletoks=\toks26
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbaseframecomponents.sty
 Package: beamerbaseframecomponents 2011/09/12  (rcs-revision 70f9d8411e54)
-\beamer@footins=\box45
+\beamer@footins=\box44
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbasecolor.sty
 Package: beamerbasecolor 2010/06/06  (rcs-revision d1a9b48be06d)
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbasenotes.sty
 Package: beamerbasenotes 2010/05/01  (rcs-revision efa082c6111d)
-\beamer@frameboxcopy=\box46
+\beamer@frameboxcopy=\box45
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbasetoc.sty
 Package: beamerbasetoc 2012/02/28  (rcs-revision 138681b92320)
@@ -542,11 +527,11 @@ Package: beamerbaseauxtemplates 2010/05/01  (rcs-revision efa082c6111d)
 
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbaseboxes.sty
 Package: beamerbaseboxes 2010/05/01  (rcs-revision efa082c6111d)
-\bmb@box=\box47
-\bmb@colorbox=\box48
-\bmb@boxshadow=\box49
-\bmb@boxshadowball=\box50
-\bmb@boxshadowballlarge=\box51
+\bmb@box=\box46
+\bmb@colorbox=\box47
+\bmb@boxshadow=\box48
+\bmb@boxshadowball=\box49
+\bmb@boxshadowballlarge=\box50
 \bmb@temp=\dimen166
 \bmb@dima=\dimen167
 \bmb@dimb=\dimen168
@@ -561,8 +546,8 @@ Package: beamerbaselocalstructure 2012/02/22  (rcs-revision 2ae76965ffee)
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks28
 )
-\c@figure=\count140
-\c@table=\count141
+\c@figure=\count138
+\c@table=\count139
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 )
@@ -592,30 +577,30 @@ Package: amsbsy 1999/11/29 v1.2d
 (D:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count142
+\inf@bad=\count140
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count143
-\leftroot@=\count144
+\uproot@=\count141
+\leftroot@=\count142
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count145
-\DOTSCASE@=\count146
+\classnum@=\count143
+\DOTSCASE@=\count144
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
+\Mathstrutbox@=\box51
+\strutbox@=\box52
 \big@size=\dimen173
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count147
-\c@MaxMatrixCols=\count148
+\macc@depth=\count145
+\c@MaxMatrixCols=\count146
 \dotsspace@=\muskip11
-\c@parentequation=\count149
-\dspbrk@lvl=\count150
+\c@parentequation=\count147
+\dspbrk@lvl=\count148
 \tag@help=\toks30
-\row@=\count151
-\column@=\count152
-\maxfields@=\count153
+\row@=\count149
+\column@=\count150
+\maxfields@=\count151
 \andhelp@=\toks31
 \eqnshift@=\dimen174
 \alignsep@=\dimen175
@@ -642,14 +627,11 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip56
 \dth@everypar=\toks39
 )
-\c@theorem=\count154
+\c@theorem=\count152
 )
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\beamerbasethemes.sty
 Package: beamerbasethemes 2010/05/01  (rcs-revision efa082c6111d)
 ))
-Requested font "cmss10" at 10.95pt
- -> cmss10
-
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\themes\theme\beamerthemedefault.sty
 Package: beamerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
@@ -693,12 +675,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen189
 \cmidrulekern=\dimen190
 \defaultaddspace=\dimen191
-\@cmidla=\count155
-\@cmidlb=\count156
+\@cmidla=\count153
+\@cmidlb=\count154
 \@aboverulesep=\dimen192
 \@belowrulesep=\dimen193
-\@thisruleclass=\count157
-\@lastruleclass=\count158
+\@thisruleclass=\count155
+\@lastruleclass=\count156
 \@thisrulewidth=\dimen194
 )
 (D:\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty
@@ -706,33 +688,32 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 111.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 113.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 111.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 113.
 
 
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
 t_3.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
 
+*geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
@@ -766,9 +747,22 @@ LaTeX Font Info:    ... okay on input line 120.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-ABD: EveryShipout initializing macros
+(D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count157
+\scratchdimen=\dimen195
+\scratchbox=\box53
+\nofMPsegments=\count158
+\nofMParguments=\count159
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count160
+\MPscratchDim=\dimen196
+\MPnumerator=\count161
+\makeMPintoPDFobject=\count162
+\everyMPtoPDFconversion=\toks41
+) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 120.
+Package hyperref Info: Link coloring OFF on input line 122.
 
 (D:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -776,11 +770,11 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (D:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count159
+\c@section@level=\count163
 )
-LaTeX Info: Redefining \ref on input line 120.
-LaTeX Info: Redefining \pageref on input line 120.
-LaTeX Info: Redefining \nameref on input line 120.
+LaTeX Info: Redefining \ref on input line 122.
+LaTeX Info: Redefining \pageref on input line 122.
+LaTeX Info: Redefining \nameref on input line 122.
 
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
 t_3.out)
@@ -788,47 +782,47 @@ t_3.out)
 t_3.out)
 \@outlinefile=\write5
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 120.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 122.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 120.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 122.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 120.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 120.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 120.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 120.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 120.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 122.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 120.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 120.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 120.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 122.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 120.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 120.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 120.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 122.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 120.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 120.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 122.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 120.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 122.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 120.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 120.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 120.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 120.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 120.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 120.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 122.
 
 (D:\CTEX\MiKTeX\tex\latex\beamer\base\translator\dicts\translator-basic-diction
 ary\translator-basic-dictionary-English.dict
@@ -854,29 +848,18 @@ Dictionary: translator-numbers-dictionary, Language: English
 onary\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 120.
+LaTeX Info: Redefining \includegraphics on input line 122.
 
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
 t_3.nav)
-Requested font "cmss8" at 6.0pt
- -> cmss8
-
-Overfull \hbox (1.20033pt too wide) in paragraph at lines 120--120
+Overfull \hbox (1.20033pt too wide) in paragraph at lines 122--122
 [][]  
  []
 
-Requested font "cmss12" at 14.4pt
- -> cmss12
-Requested font "cmss8" at 8.0pt
- -> cmss8
-Requested font "cmssi8" at 8.0pt
- -> cmssi8
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 125.
+(Font)              size <5> substituted on input line 127.
 
-Requested font "cmss8" at 5.0pt
- -> cmss8
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
@@ -884,7 +867,7 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [1
 
-]
+{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
 t_3.toc)
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
@@ -895,97 +878,48 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 ]
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
-t_3.bbl
-File: beamericonarticle.pdf Graphic file (type QTm)
- <use  "beamericonarticle.pdf" >
-File: beamericonarticle.pdf Graphic file (type QTm)
- <use  "beamericonarticle.pdf" >
-Requested font "cmssi10" at 10.95pt
- -> cmssi10
-)
+t_3.bbl)
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
 
 [3
 
-]
-Requested font "cmss12" at 12.0pt
- -> cmss12
-Requested font "cmssbx10" at 10.95pt
- -> cmssbx10
-
+ <D:/CTEX/MiKTeX/tex/latex/beamer/base/art/beamericonarticle.pdf>]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
 
 [4
 
-]
-File: fig1.jpg Graphic file (type QTm)
- <use  "fig1.jpg" >
-Requested font "cmss10" at 10.0pt
- -> cmss10
-Requested font "cmmi10" at 10.95pt
- -> cmmi10
-Requested font "cmmi8" at 8.0pt
- -> cmmi8
-Requested font "cmmi6" at 6.0pt
- -> cmmi6
-Requested font "cmsy10" at 10.95pt
- -> cmsy10
-Requested font "cmsy8" at 8.0pt
- -> cmsy8
-Requested font "cmsy6" at 6.0pt
- -> cmsy6
-Requested font "cmex10" at 10.95pt
- -> cmex10
-Requested font "cmex8" at 8.0pt
- -> cmex8
-Requested font "cmex7" at 6.0pt
- -> cmex7
-LaTeX Font Info:    Try loading font information for U+msa on input line 174.
- (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+] <fig1.jpg, id=119, 512.66531pt x 305.64188pt>
+File: fig1.jpg Graphic file (type jpg)
+ <use fig1.jpg>
+Package pdftex.def Info: fig1.jpg used on input line 176.
+(pdftex.def)             Requested size: 205.37926pt x 122.44112pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 176.
+
+(D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-Requested font "msam10" at 10.95pt
- -> msam10
-Requested font "msam10" at 8.0pt
- -> msam10
-Requested font "msam7" at 6.0pt
- -> msam7
-LaTeX Font Info:    Try loading font information for U+msb on input line 174.
+LaTeX Font Info:    Try loading font information for U+msb on input line 176.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Requested font "msbm10" at 10.95pt
- -> msbm10
-Requested font "msbm10" at 8.0pt
- -> msbm10
-Requested font "msbm7" at 6.0pt
- -> msbm7
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 174.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 176.
 
 (D:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Requested font "rsfs10" at 10.95pt
- -> rsfs10
-Requested font "rsfs10" at 8.0pt
- -> rsfs10
-Requested font "rsfs5" at 6.0pt
- -> rsfs5
-Requested font "cmssi8" at 6.0pt
- -> cmssi8
-
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
 
 [5
 
-]
+ <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/fig1
+.jpg>]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
@@ -1007,14 +941,18 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [8
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 244
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 246
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 244.
+LaTeX Font Info:    No file OMScmss.fd. on input line 246.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 244.
+(Font)              for symbol `textbraceleft' on input line 246.
+
+
+Overfull \vbox (5.94434pt too high) detected at line 246
+ []
 
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
@@ -1024,8 +962,12 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [9
 
 ]
-Missing character: There is no â€˜ in font cmss10!
-Missing character: There is no â€™ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ˜ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
@@ -1033,47 +975,20 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [10
 
-]
-File: algo1.jpg Graphic file (type QTm)
- <use  "algo1.jpg" >
+] <algo1.jpg, id=172, 369.63094pt x 382.42876pt>
+File: algo1.jpg Graphic file (type jpg)
+ <use algo1.jpg>
+Package pdftex.def Info: algo1.jpg used on input line 283.
+(pdftex.def)             Requested size: 136.91603pt x 141.65398pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
 
 [11
 
-]
-Requested font "cmss8" at 7.0pt
- -> cmss8
-Requested font "cmex7" at 7.0pt
- -> cmex7
-Requested font "cmex7" at 5.0pt
- -> cmex7
-Requested font "msam10" at 10.0pt
- -> msam10
-Requested font "msam7" at 7.0pt
- -> msam7
-Requested font "msam5" at 5.0pt
- -> msam5
-Requested font "msbm10" at 10.0pt
- -> msbm10
-Requested font "msbm7" at 7.0pt
- -> msbm7
-Requested font "msbm5" at 5.0pt
- -> msbm5
-Requested font "rsfs10" at 10.0pt
- -> rsfs10
-Requested font "rsfs7" at 7.0pt
- -> rsfs7
-Requested font "rsfs5" at 5.0pt
- -> rsfs5
-Requested font "cmssi10" at 10.0pt
- -> cmssi10
-Requested font "cmssi8" at 7.0pt
- -> cmssi8
-Requested font "cmssi8" at 5.0pt
- -> cmssi8
-
+ <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/algo
+1.jpg>]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
@@ -1101,10 +1016,13 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [15
 
-]
-File: fig2.jpg Graphic file (type QTm)
- <use  "fig2.jpg" >
-Overfull \vbox (6.98253pt too high) detected at line 381
+] <fig2.jpg, id=220, 326.72063pt x 261.97874pt>
+File: fig2.jpg Graphic file (type jpg)
+ <use fig2.jpg>
+Package pdftex.def Info: fig2.jpg used on input line 384.
+(pdftex.def)             Requested size: 154.03183pt x 123.50978pt.
+
+Overfull \vbox (7.16916pt too high) detected at line 384
  []
 
 
@@ -1114,13 +1032,10 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [16
 
-]
-Overfull \hbox (9.20612pt too wide) in paragraph at lines 406--406
-[]$ 
- []
-
-
-Overfull \vbox (3.42282pt too high) detected at line 406
+ <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/fig2
+.jpg>]
+Overfull \hbox (9.20612pt too wide) in paragraph at lines 409--409
+$[]$ 
  []
 
 
@@ -1130,16 +1045,20 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [17
 
-]
-File: algo2.jpg Graphic file (type QTm)
- <use  "algo2.jpg" >
+] <algo2.jpg, id=235, 408.02437pt x 363.60844pt>
+File: algo2.jpg Graphic file (type jpg)
+ <use algo2.jpg>
+Package pdftex.def Info: algo2.jpg used on input line 416.
+(pdftex.def)             Requested size: 171.14764pt x 152.51476pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
 
 [18
 
-]
+ <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/algo
+2.jpg>]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
@@ -1161,21 +1080,6 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [21
 
 ]
-Requested font "cmmi12" at 12.0pt
- -> cmmi12
-Requested font "cmsy10" at 12.0pt
- -> cmsy10
-Requested font "cmex10" at 12.0pt
- -> cmex10
-Requested font "msam10" at 12.0pt
- -> msam10
-Requested font "msbm10" at 12.0pt
- -> msbm10
-Requested font "rsfs10" at 12.0pt
- -> rsfs10
-Requested font "cmssi12" at 12.0pt
- -> cmssi12
-
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
@@ -1231,46 +1135,62 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [29
 
-]
-File: subfig1.jpg Graphic file (type QTm)
- <use  "subfig1.jpg" >
+] <subfig1.jpg, id=327, 575.14874pt x 288.3272pt>
+File: subfig1.jpg Graphic file (type jpg)
+ <use subfig1.jpg>
+Package pdftex.def Info: subfig1.jpg used on input line 590.
+(pdftex.def)             Requested size: 273.83728pt x 137.278pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
 
 [30
 
-]
-File: subfig2.jpg Graphic file (type QTm)
- <use  "subfig2.jpg" >
+ <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/subf
+ig1.jpg>] <subfig2.jpg, id=335, 274.02374pt x 280.04625pt>
+File: subfig2.jpg Graphic file (type jpg)
+
+<use subfig2.jpg>
+Package pdftex.def Info: subfig2.jpg used on input line 610.
+(pdftex.def)             Requested size: 154.03183pt x 157.41878pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
 
 [31
 
-]
-File: subfig3.jpg Graphic file (type QTm)
- <use  "subfig3.jpg" >
+ <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/subf
+ig2.jpg>] <subfig3.jpg, id=343, 273.27094pt x 270.25969pt>
+File: subfig3.jpg Graphic file (type jpg)
+
+<use subfig3.jpg>
+Package pdftex.def Info: subfig3.jpg used on input line 630.
+(pdftex.def)             Requested size: 154.03183pt x 152.3341pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
 
 [32
 
-]
-File: subfig4.jpg Graphic file (type QTm)
- <use  "subfig4.jpg" >
+ <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/subf
+ig3.jpg>] <subfig4.jpg, id=351, 578.91281pt x 270.25969pt>
+File: subfig4.jpg Graphic file (type jpg)
+
+<use subfig4.jpg>
+Package pdftex.def Info: subfig4.jpg used on input line 643.
+(pdftex.def)             Requested size: 256.72147pt x 119.8466pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
 
 [33
 
-]
-Requested font "cmss17" at 24.88pt
- -> cmss17
-
+ <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/subf
+ig4.jpg>]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [][] 
  []
@@ -1281,13 +1201,15 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 653.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 653.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 654.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 654.
 
 (E:\system_secruity_paper_presentation\system_secruity_paper_presentation\repor
 t_3.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 653.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 653.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 654.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 654.
+Package rerunfilecheck Info: File `report_3.out' has not changed.
+(rerunfilecheck)             Checksum: 74337895D320A985DC12E576688B66BB;481.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1298,12 +1220,48 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16796 strings out of 430478
- 297444 string characters out of 3191502
- 410429 words of memory out of 3000000
- 19563 multiletter control sequences out of 15000+200000
+ 15897 strings out of 495354
+ 295416 string characters out of 3183860
+ 386070 words of memory out of 3000000
+ 18581 multiletter control sequences out of 15000+200000
  17287 words of font info for 67 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,16n,63p,628b,1036s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,16n,63p,633b,1097s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Navigation120} has been referenced but does not e
+xist, replaced by a fixed one
 
-Output written on report_3.pdf (34 pages).
+pdfTeX warning (dest): name{Navigation119} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation74} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation61} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation48} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation136} has been referenced but does not exi
+st, replaced by a fixed one
+
+<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts
+/type1/public/amsfonts/cmextra/cmex8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D
+:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/CTEX/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmmi7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/CTEX/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><D:/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmss17.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8
+.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/CTEX/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmssi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmssi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on report_3.pdf (34 pages, 1818242 bytes).
+PDF statistics:
+ 447 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+

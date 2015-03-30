@@ -15,7 +15,8 @@
 %	PACKAGES AND THEMES
 %----------------------------------------------------------------------------------------
 
- \documentclass{beamer}
+ \documentclass[handout]{beamer}
+ %\documentclass{beamer}
 
 \mode<presentation> {
 
@@ -100,6 +101,7 @@
 \usepackage{mathrsfs}
 \bibliographystyle{ieeetr}
 \definecolor{bazaar}{rgb}{0.6, 0.47, 0.48}
+\definecolor{grey}{rgb}{0.52, 0.52, 0.51}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -135,18 +137,18 @@ Dalian University of Technology \\
 
 \begin{frame}
  \frametitle{Introduction of the Paper}
- \begin{block}{Purpose}
+ \begin{block}<1->{Purpose}
   Solve the problem of secure and efficient fuzzy search over encrypted outsourced cloud data
   \end{block}
   
-  \begin{block}{Measures}
+  \begin{block}<2->{Measures}
   	\begin{itemize}
-  		\item Suppressing technique 
-  		\item Building a private trie-traverse searching index
+  		\item<3-> Suppressing technique 
+  		\item<4-> Building a private trie-traverse searching index
   	\end{itemize}
   \end{block}
   
-  \begin{block}{Performance}
+  \begin{block}<5->{Performance}
 	  Correctly achieves the defined similarity search functionality with \textbf{\textcolor{red}{constant}}  searching time!
   \end{block}
   
@@ -168,41 +170,41 @@ Dalian University of Technology \\
 	\caption[1]{Architecture of similarity keyword search over outsourced cloud data}
 	\end{figure}
 		\begin{itemize}
-			\item data owner: the individual/enterprise customer,who has a collection of $n$ data files $C = ({F_1},{F_2}, \ldots ,{F_n})$ to be stored in the cloud server.
-			\item $W = \left\{ {{w_i},{w_w}, \ldots ,{w_p}} \right\}$ is denoted as a predefined set of distinct keywords in $C$
+			\item<2-> data owner: the individual/enterprise customer,who has a collection of $n$ data files $C = ({F_1},{F_2}, \ldots ,{F_n})$ to be stored in the cloud server.
+			\item<3-> $W = \left\{ {{w_i},{w_w}, \ldots ,{w_p}} \right\}$ is denoted as a predefined set of distinct keywords in $C$
 		\end{itemize}
 \end{frame}
 %\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 \begin{frame}
 	\frametitle{System and Threat Model}
 	\begin{itemize}
-		\item Files are encrypted before outsourced
-		\item The data owner will distribute search request\textcolor{red}{(trapdoor) generation keys $sk$} to authorized users.(Assume that the authorization will be done appropriately)
-		\item An authorized user uses \textcolor{red}{trapdoor generation key} to generate a search request via some \textcolor{red}{one-way function} to search word $w$, and submit it to the cloud.
-		\item The cloud then performs the search over the data
+		\item<1-> Files are encrypted before outsourced
+		\item<2-> The data owner will distribute search request\textcolor{red}{(trapdoor) generation keys $sk$} to authorized users.(Assume that the authorization will be done appropriately)
+		\item<3-> An authorized user uses \textcolor{red}{trapdoor generation key} to generate a search request via some \textcolor{red}{one-way function} to search word $w$, and submit it to the cloud.
+		\item<4-> The cloud then performs the search over the data
 		collection $C$ without decryption and sends back all encrypted files containing the specific keyword $w$, denoted as $FI{D_w}$.
-		\item \textcolor{blue} {The
+		\item<5-> \textcolor{blue} {The
 		similarity keyword search scheme returns the closest possible results based on aforementioned measures.}
-		\item At last, the user decrypts files they received from the cloud.
+		\item<6-> At last, the user decrypts files they received from the cloud.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Assumption: Honest-but-curious clound server}
-    To ensure the securely similarity searching schema:
+    To ensure the securely similarity searching scheme:
     \begin{columns}[t] 
     \column{.3\textwidth}
-    \begin{block}{Honest}
+    \begin{block}<2->{Honest}
     	Correctly follows the designated protocol specification
     \end{block}
     \column{.5\textwidth}
-        \begin{alertblock}{Curious}
+        \begin{alertblock}<3->{Curious}
         	Infer and analyze the message flow received during the protocol so as to learn additional information
         \end{alertblock}
     \end{columns}
     \begin{columns}
     \column{.8\textwidth}
-    \begin{exampleblock}{}
+    \begin{exampleblock}<4->{}
         We follow the security definition
         deployed in the traditional  \textcolor{red} {searchable symmetric encryption(SSE)}
     \end{exampleblock}
@@ -212,14 +214,14 @@ Dalian University of Technology \\
 \begin{frame}
 	\frametitle{Notations}
 	\begin{description}
-		\item[$C$]the file collection to be outsourced, denoted as a set of $n$ data files $C = ({F_1},{F_2}, \ldots ,{F_n})$.
-		\item[$W$]the distinct keywords extracted from file collection $C$, denoted as a set of $m$ words $W = \left\{ {{w_i},{w_w}, \ldots ,{w_p}} \right\}$.
-		\item[$\cal I$]the index built for privacy-assured similarity search.
-		\item[${T_w}$] the trapdoor generated by a user as a search request of input keyword $w$ via some one-way transformation.
-		\item[${S_{w,d}}$] similarity keyword set of $w$, where $d$ is the similarity threshold according to a certain similarity metrics.
-		\item[$FI{D_{{w_i}}}$]the set of identifiers of files in $C$ that contain keyword ${{w_i}}$.
-		\item[$f(key, \cdot ),g(key, \cdot )$]pseudorandom function (PRF), defined	as: ${\{ 0,1\} ^*} \times key \to {\{ 0,1\} ^{\ell }}$.
-		\item[$Enc(key, \cdot ),Dec(key, \cdot )$]symmetric key based semantic secure encryption/decryption function.
+		\item<2->[$C$]the file collection to be outsourced, denoted as a set of $n$ data files $C = ({F_1},{F_2}, \ldots ,{F_n})$.
+		\item<3->[$W$]the distinct keywords extracted from file collection $C$, denoted as a set of $m$ words $W = \left\{ {{w_i},{w_w}, \ldots ,{w_p}} \right\}$.
+		\item<4->[$\cal I$]the index built for privacy-assured similarity search.
+		\item<5->[${T_w}$] the trapdoor generated by a user as a search request of input keyword $w$ via some one-way transformation.
+		\item<6->[${S_{w,d}}$] similarity keyword set of $w$, where $d$ is the similarity threshold according to a certain similarity metrics.
+		\item<7->[$FI{D_{{w_i}}}$]the set of identifiers of files in $C$ that contain keyword ${{w_i}}$.
+		\item<8->[$f(key, \cdot ),g(key, \cdot )$]pseudorandom function (PRF), defined	as: ${\{ 0,1\} ^*} \times key \to {\{ 0,1\} ^{\ell }}$.
+		\item<9->[$Enc(key, \cdot ),Dec(key, \cdot )$]symmetric key based semantic secure encryption/decryption function.
 	\end{description}
 \end{frame}
 \section{Suppression Technique}
@@ -227,15 +229,15 @@ Dalian University of Technology \\
 	\frametitle{Edit Distance}
 	\begin{columns}
 	\end{columns}
-	\begin{block}{Quantitative measurement}
-		The edit distance $ed({w_1},{w_2})$ between two words ${w_1}$ and ${w_2}$ is the \textcolor{red}{mininum} number of \textcolor{red}{primitive operations}, including \textcolor{blue}{character insertion, deletion} and \textcolor{blue}{substitution}, necessary to transform one of them into the other.
+	\begin{block}<1->{Quantitative measurement}
+		The edit distance $ed({w_1},{w_2})$ between two words ${w_1}$ and ${w_2}$ is the \textcolor{red}{minimum} number of \textcolor{red}{primitive operations}, including \textcolor{blue}{character insertion, deletion} and \textcolor{blue}{substitution}, necessary to transform one of them into the other.
 	\end{block}
 	
-	\begin{block}{Similarity keyword set}
+	\begin{block}<2->{Similarity keyword set}
 		Given a keyword $w$, we let ${S_{w,d}}$ denote its similarity set of words, such that any $w' \in {S_{w,d}}$ satisfies \textcolor[rgb]{0.1,0.6,0.3}{$ed(w,w') \le d$}  for a certain integer $d$.
 	\end{block}
 	
-	\begin{exampleblock}{Example}
+	\begin{exampleblock}<3->{Example}
 		Consider the keyword $w_0=$\textit{CENSOR}\\
 		a words set W = \{\textit{CESOR},\textit{CENSER},\textit{CEANSOR}\}\\
 		for any $w' \in W$,$ed({w_0},w') \le 1$ holds,\\
@@ -247,24 +249,24 @@ Dalian University of Technology \\
 	\frametitle{Building Similarity Keyword Sets}
 	\begin{columns}
 		\column{.45\textwidth}
-		\begin{alertblock}{Straightforward approach}
+		\begin{alertblock}<2->{Straightforward approach}
 			Simply \textcolor{red}{enumerating} all possible words $w{'_i}$ satisfying the similarity
 			criteria $ed({w_i},w{'_i}) \le d$
 		\end{alertblock}
-		\begin{alertblock}{}
+		\begin{alertblock}<3->{}
 		For the keyword $w_0=$\textit{CENSOR},
 		consider just one substitution operation with charaters on first character.\\
 		There are 26 items \{\textit{AENSOR},\textit{BENSOR}, \ldots ,\textit{YENSOR},\textit{ZENSOR}\} \\
 		So ${S_{{w_0},1}}$ will be $[6 + (6 + 1)] \times \textcolor{red}{26} + \textcolor{green}1$
 		\end{alertblock}
 		\column{.5\textwidth}
-		\begin{block}{Suppression technique}
+		\begin{block}<4->{Suppression technique}
 			Consider only the \textcolor{blue}{positions} of the primitive edit operations.Specifically, we use a \textcolor{blue}{wildcard ‘*’ }to
 			denote all three operations of character insertion, deletion and
 			substitution at any position.
 		\end{block}
 		
-		\begin{block}{}
+		\begin{block}<5->{}
 			Now,\\
  ${{{S}}_{SENSOR,1}} = $ \{\textit{SENSOR}, \textit{*SENSOR, *ENSOR},\textit{S*ENSOR}, \textit{S*NSOR}, \ldots, \textit{SENSO*R}, \textit{SENSO*}, \textit{SENSOR*}\}.
 			Size can be reduced to ${S_{{w_0},1}}$ will be $[6 + (6 + 1)] \times \textcolor{blue}{1} + \textcolor{green}1$
@@ -282,14 +284,14 @@ Dalian University of Technology \\
 
 \begin{frame}
 	\frametitle{Generating Searching Request}
-	\begin{theorem}
+	\begin{theorem}<2->
 		The intersection of the similarity sets \textcolor{blue}{${S_{{w_i},d}}$} and \textcolor{red}{${S_{w,d}}$} for keyword \textcolor{blue}{$w_i$} and  search input \textcolor{red}{$w$} is not empty if and only if $ed(\textcolor{red}{w},\textcolor{blue}{w_i}) \le d$.
 	\end{theorem}
 	
-	\begin{proof}
+	\begin{proof}<3->
 		\begin{itemize}
 			\item Completeness(i.e. $ed(\textcolor{red}{w},\textcolor{blue}{w_i}) \le d \to \textcolor{red}{S_{{w_i},d}} \cap \textcolor{blue}{S_{w,d}} \ne \emptyset $ ):
-			\begin{itemize}
+			\begin{itemize}[<4->]
 				\item $\textcolor{red}{w} \to \textcolor{blue}{{w_i}}$ need at most $d$ primitive operations.\\the result after these operations is marked as $w^*$
 				\item $w^*$ is naturally in \textcolor{red}{${S_{w,d}}$} 
 				\item $w^*$ can be transformed into \textcolor{blue}{${w_i}$}, so it must be in \textcolor{blue}{${S_{{w_i},d}}$} 
@@ -299,18 +301,19 @@ Dalian University of Technology \\
 	\end{proof}
 \end{frame}
 
+
 \begin{frame}
 	\frametitle{Generating Searching Request}
 	\begin{proof}
 		\begin{itemize}
 			\item Soundness(i.e. $\textcolor{blue}{S_{{w_i},d}} \cap \textcolor{red}{S_{w,d}} \ne \emptyset  \to ed(\textcolor{red}{w},\textcolor{blue}{w_i}) \le d$) \\
-			\begin{description}
+			\begin{description}[<2->]
 				\item[${w^*}$]the common element in $\textcolor{blue}{S_{{w_i},d}} \cap \textcolor{red}{S_{w,d}}$
 			\end{description}
 			\begin{enumerate}
-				\item ${w^*}$ does not contain any wildcard *,\\
+				\item<3-> ${w^*}$ does not contain any wildcard *,\\
 				then ${w^*} =\textcolor{red}{ w} =\textcolor{blue}{ w'}$,and $ed(\textcolor{red}{w},\textcolor{blue}{w'}) = 0 \le d$
-				\item ${w^*}$ does contain some wildcard *(at most d *'s),\\
+				\item<4-> ${w^*}$ does contain some wildcard *(at most d *'s),\\
 				change * in $w^*$ back to the character in \textcolor{red}{$w$} and \textcolor{blue}{$w_i$},\\
 				denote the result as \textcolor{red}{$w{'^*}$} and \textcolor{blue}{$w{'_i}^*$} with both sharing $d-1$ different *'s.\\
 				$\textcolor{red}{w{'^*}} \to \textcolor{blue}{w{'_i}^*}$ need at most one primitive operation.\\
@@ -326,31 +329,31 @@ Dalian University of Technology \\
 
 \begin{frame}
 	\frametitle{The Basic Scheme}
-	\begin{block}{}
+	\begin{block}<2->{}
 		\begin{description}
 			\item[$\tau $]the maximum size of the similarity keyword set $S_{{w_i},d}$ for ${w_i} \in W$, i.e.,$\tau  = \max {\left\{ {\left| {{S_{{w_i},d}}} \right|} \right\}_{{w_i} \in W}}$ where $\left| W \right| = p$.
 		\end{description}
 	\end{block}
-		\begin{exampleblock}{Prepocessing phase(the owner)}
+		\begin{exampleblock}<3->{Preprocessing phase(the owner)}
 			\begin{enumerate}
-				\item  picks random key $x$,$y$,and builds index ${\cal I} = {\left\{ {f(x,w{'_i}),Enc(s{k_{w{'_i}}},FI{D_{{w_i}}})} \right\}_{w{'_i} \in {S_{{w_i},d}},1 \le i \le p}}$, where secret key $s{k_{w{'_i}}} = g(y,w{'_i})$
-				\item insert extra $\tau \left| W \right| - \left| {\cal I} \right|$ dummy entries(using random values) in $\cal I$ for padding.
-				\item randomly shuffles $\cal I$, outsources $\cal I$, encrypted $C$ to cloud.
+				\item<4->  picks random key $x$,$y$,and builds index ${\cal I} = {\left\{ {\textcolor{red}{f(x,w{'_i})},Enc(\textcolor[rgb]{0.1,0.7,0.2}{s{k_{w{'_i}}}},FI{D_{{w_i}}})} \right\}_{w{'_i} \in {S_{{w_i},d}},1 \le i \le p}}$, where secret key \textcolor[rgb]{0.1,0.7,0.2}{$s{k_{w{'_i}}} = g(y,w{'_i})$}
+				\item<5-> insert extra $\tau \left| W \right| - \left| {\cal I} \right|$ dummy entries(using random values) in $\cal I$ for padding.
+				\item<6-> randomly shuffles $\cal I$, outsources $\cal I$, encrypted $C$ to cloud.
 			\end{enumerate}
 		\end{exampleblock}
-\end{frame}
+	\end{frame}
 
 \begin{frame}{The Basic Scheme}
-	\begin{alertblock}{Searching phase(the user)}
+	\begin{alertblock}<2->{Searching phase(the user)}
 		\begin{enumerate}
-			\item generates ${{S_{w,d}}}$ from input $w$ via Algorithm 1 and derives ${T_{w'}} = (f(x,w'),g(y,w'))$ for each $w' \in {S_{w,d}}$
-			\item generates $\tau  - \left| {{S_{w,d}}} \right|$ dummy trapdoors by randomly choosing $j$ from ${\left\{ {f(x,j),g(y,j)} \right\}_{1 \le j \le \tau \left| W \right| - \left| {\cal I} \right|}}$
-			\item Cloud server compares all received trapdoors $\left\{ {f(x,w')} \right\}$(and $\left\{ {f(x,j)} \right\}$) with ${\cal I}$ uses the corresponding $\left\{ {g(y,w')} \right\}$ to decrypt the matched entries,  and returns the union of file identifiers, ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed(w,{w_i}) \le d}}$.
-			\item The user retrieves and decrypts the files of interest.
+			\item<3-> generates ${{S_{w,d}}}$ from input $w$ via Algorithm 1 and derives ${T_{w'}} = (\textcolor{red}{f(x,w')},\textcolor[rgb]{0.1,0.7,0.2}{g(y,w'))}$ for each $w' \in {S_{w,d}}$
+			\item<4-> generates $\tau  - \left| {{S_{w,d}}} \right|$ dummy trapdoors by randomly choosing $j$ from ${\left\{ {\textcolor{red}{f(x,j)},\textcolor[rgb]{0.1,0.7,0.2}{g(y,j)}} \right\}_{1 \le j \le \tau \left| W \right| - \left| {\cal I} \right|}}$
+			\item<5-> Cloud server compares all received trapdoors $\left\{ \textcolor{red}{f(x,w')} \right\}$(and $\left\{ \textcolor{red}{f(x,j)} \right\}$) with ${\cal I}$ uses the corresponding $\left\{ \textcolor[rgb]{0.1,0.7,0.2}{g(y,w')} \right\}$ to decrypt the matched entries,  and returns the union of file identifiers, ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed(w,{w_i}) \le d}}$.
+			\item<6-> The user retrieves and decrypts the files of interest.
 		\end{enumerate}
 	\end{alertblock}
-	\begin{block}{Improvement}
-		Storage and search cost is ${\cal O}(\tau \left| W \right|)$.\\
+	\begin{block}<7->{Improvement}
+		Storage and search cost is ${\cal O}(\textcolor{red}{\tau} \left| W \right|)$.\\
 		Bloom Filters can be introduced in to reduce the searching cost to  ${\cal O}( \left| W \right|)$
 	\end{block}
 \end{frame}
@@ -359,7 +362,7 @@ Dalian University of Technology \\
 
 \begin{frame}{The Symbol-based Trie-Traverse Searching Schema}
 	\begin{block}{All similar words in the trie can be found by a depth-first search}
-		Construct a multi-way tree for storing the similarity keyword elements over a finite symbol set.All trapdoors sharing a common prefix have a common node.	The root is associated with an empty set. 
+		Construct a \textcolor{blue}{multi-way} tree for storing the similarity keyword elements over a finite symbol set. All trapdoors sharing a \textcolor{blue}{common prefix} have a common node. The root is associated with an empty set. 
 	\end{block}
 	\begin{columns}
 		\column{0.45\textwidth}
@@ -368,11 +371,11 @@ Dalian University of Technology \\
       \caption{The depth of the tree is $l/\theta$}
     \end{figure}
     \column{.45\textwidth}
-    \begin{exampleblock}{}
+    \begin{exampleblock}<2->{}
     	\begin{itemize}
     		\item Assume $\Delta  = \left\{ {{\alpha _i}} \right\}$ is a predefined symbol set.
-    		\item $\left| \Delta  \right| = {2^\theta }$
-    		\item each symbol ${\alpha _i} \in \Delta $ is denoted by a $\theta$-bit binary vector.
+    		\item $\left| \Delta  \right| = {\textcolor[rgb]{0.1,0.7,0.2}{2}^\theta }$
+    		\item each symbol ${\alpha _i} \in \Delta $ is denoted by a $\theta$-bit \textcolor[rgb]{0.1,0.7,0.2}{binary} vector.
     		\item $l$ is the output length of one-way function $f(key, \cdot )$.
     	\end{itemize}
     	
@@ -383,23 +386,23 @@ Dalian University of Technology \\
 \begin{frame}{The Symbol-based Trie-Traverse Searching Schema}
 		\begin{columns}
 			\column{.49\textwidth}
-			\begin{exampleblock}{Preprocessing phase(the owner)}
+			\begin{exampleblock}<2->{Preprocessing phase(the owner)}
 		\begin{enumerate}
-			\item 	computes ${f(x,w{'_i})}$ for each ${w{'_i} \in {S_{{w_i},d}}}$,${1 \le i \le p}$ together with dummy entries.
-			\item divides them into symbols as ${\alpha _{{i_1}}} \cdots {\alpha _{{i_{l/\theta }}}}$ from $\Delta$.
-			\item builds up a trie ${G_W}$ covering all ${w_i} \in W$.
-			\item attaches ${\left\{ {Enc(s{k_{w{'_i}}},FI{D_{{w_i}}})} \right\}_{w{'_i} \in {S_{{w_i},d}},1 \le i \le p}}$ to $G_W$,\\outsourced it\\ with encrypted collection $C$ to the cloud.
+			\item<3-> 	computes \textcolor{red}{${f(x,w{'_i})}$} for each ${w{'_i} \in {S_{{w_i},d}}}$,${1 \le i \le p}$ together with dummy entries.
+			\item<4-> divides them into symbols as ${\alpha _{{i_1}}} \cdots {\alpha _{{i_{l/\theta }}}}$ from $\Delta$.
+			\item<5-> builds up a trie ${G_W}$ covering all ${w_i} \in W$.
+			\item<6-> attaches ${\left\{ {Enc(\textcolor[rgb]{0.1,0.7,0.2}{s{k_{w{'_i}}}},FI{D_{{w_i}}})} \right\}_{w{'_i} \in {S_{{w_i},d}},1 \le i \le p}}$ to $G_W$,\\outsourced it\\ with encrypted collection $C$ to the cloud.
 			
 			
 		\end{enumerate}
 			\end{exampleblock}
 			
 			\column{.44\textwidth}
-			\begin{alertblock}{Searching phase(the user)}
+			\begin{alertblock}<7->{Searching phase(the user)}
 			 \begin{enumerate}
-			 	\item sends a set of $\tau $ trapdoors(research request): ${\left\{ {{T_{w'}}} \right\}_{w' \in {S_{w,d}}}}$ and $\tau  - \left| {w' \in {S_{w,d}}} \right|$ dummy trapdoors.
-			 	\item the cloud server divides each $f(x,w')$ into a sequence of symbols from $\Delta$. Perform the search over the trie $G_W$.
-			 	\item decrypts matches entries via $g(y,w')$ and return ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed(w,{w_i}) \le d}}$ to the user.
+			 	\item<8-> sends a set of $\tau $ trapdoors(research request): ${\left\{ {{T_{w'}}} \right\}_{w' \in {S_{w,d}}}}$ and $\tau  - \left| {w' \in {S_{w,d}}} \right|$ dummy trapdoors.
+			 	\item<9-> the cloud server divides each \textcolor{red}{$f(x,w')$} into a sequence of symbols from $\Delta$. Perform the search over the trie $G_W$.
+			 	\item<10-> decrypts matches entries via \textcolor[rgb]{0.1,0.7,0.2}{$g(y,w')$} and returns ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed(w,{w_i}) \le d}}$ to the user.
 			 \end{enumerate}
 			\end{alertblock}
 		\end{columns}
@@ -409,51 +412,51 @@ Dalian University of Technology \\
 	\begin{figure}
 		\includegraphics[width=0.5\textwidth]{algo2.jpg}
 	\end{figure}
-	The search cost at the server side is only \textcolor{red}{${\cal O}(1)$}(a \textcolor{red}{constant} related to $l/\theta$)
+     The search cost at the server side is only \textcolor{red}{${\cal O}(1)$} (a \text	color{red}{constant} related to $l/\theta$).
 \end{frame}
 
 \section{Security Analysis}
 
 \begin{frame}{Security Gurantee}
-	\begin{block}{}
+	\begin{block}<2->{}
 		\begin{itemize}
 			\item Our searching mechanism always returns the \textcolor{bazaar}{same} search results for the \textcolor{bazaar}{same} search requests.
 			\item The cloud server can build up \textcolor[rgb]{0.0, 0.26, 0.15}{access patterns} and \textcolor[rgb]{0.0, 0.26, 0.15}{search patterns} along the interactions with users.
 		\end{itemize}
 	\end{block}
 	
-	\begin{alertblock}{}
+	\begin{alertblock}<3->{}
 		Thus, the security guarantee should ensure that nothing beyond the \textcolor[rgb]{0.0, 0.26, 0.15}{pattern} and
 		\textcolor[rgb]{0.0, 0.26, 0.15}{the outcome of a series of search requests} be leaked.
 	\end{alertblock}
-	\begin{block}{The \textcolor{red}{non-adaptive} semantic security guarantee}
+	\begin{block}<4->{The \textcolor{red}{non-adaptive} semantic security guarantee}
 		The \textcolor{red}{non-adaptive} attack model only considers adversaries (i.e., the cloud server) that \textcolor{red}{cannot choose} search requests based on the trapdoors and search outcomes of previous searches. (Since only users with authorized secret keys can generate search trapdoors.)
 	\end{block}
 \end{frame}
 
-\begin{frame}{Notation}
+\begin{frame}{Notations}
 \begin{description}
-	\item[History] an interaction between the user and the cloud
+	\item<2->[History] an interaction between the user and the cloud
 	server, determined by a file collection $C$ and a set of keywords
 	searched by the user, denoted as ${H_q} = (C,{w^1}, \ldots ,{w^q})$.
-	\item[View] given a history ${H_q}$ under some secret key $K$, the cloud
+	\item<3->[View] given a history ${H_q}$ under some secret key $K$, the cloud
 	server can only see an encrypted version of the history, i.e., the
 	view ${V_K}({H_q})$, including: the index $\cal I$ of $C$; the trapdoors of the
 	queried keywords ${\left\{ {{T_{w'}}} \right\}_{w' \in \left\{ {{S_{{w^1},d}}, \ldots ,{S_{{w^q},d}}} \right\}}}$ ; and the encrypted
 	file collection of $C$, denoted as $\left\{ {{e_1}, \ldots ,{e_n}} \right\}$.
-	\item[Trace] given a history ${H_q}$ and an encrypted file collection $C$, the trace of ${Tr({H_q})}$ captures the precise information to be learned by cloud server, including: the size of the encrypted files $\left\{ {\left| {{F_1}} \right|, \ldots ,\left| {{F_n}} \right|} \right\}$; the outcome of each search, ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed({w_i},{w^j}) \le d}}$ for $1 \le j \le q$; and the pattern ${\prod_q}$ for each search. Here ${\prod_q}$ is a symmetric matrix where the entry ${\prod _q}[i,j]$ stores the intersection ${\left\{ {{T_{w'}}} \right\}_{w' \in {S_{{w^i},d}} \cap {S_{{w^j},d}}}}$.
+	\item<4->[Trace] given a history ${H_q}$ and an encrypted file collection $C$, the trace of ${Tr({H_q})}$ captures the precise information to be learned by cloud server, including: the size of the encrypted files $\left\{ {\left| {{F_1}} \right|, \ldots ,\left| {{F_n}} \right|} \right\}$; the outcome of each search, ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed({w_i},{w^j}) \le d}}$ for $1 \le j \le q$; and the pattern ${\prod_q}$ for each search. Here ${\prod_q}$ is a symmetric matrix where the entry ${\prod _q}[i,j]$ stores the intersection ${\left\{ {{T_{w'}}} \right\}_{w' \in {S_{{w^i},d}} \cap {S_{{w^j},d}}}}$.
 \end{description}
 \end{frame}
 
 \begin{frame}{Security Analysis}
-	\begin{exampleblock}{Security Strength}
-		Given two histories with the identical trace, the cloud server is not able to distinguish the views of the two histories.\\
+	\begin{exampleblock}<2->{Security Strength}
+		Given two histories with the identical trace, the cloud server is not able to \textcolor{red}{distinguish} the views of the two histories.\\
 		In other words, the cloud server cannot extract additional knowledge beyond the information we are willing to leak (i.e., the trace) and thus our mechanism is secure.
 	\end{exampleblock}
-	\begin{theorem}
-		Our similarity keyword search schemes meet the non-adaptive semantic security.
+	\begin{theorem}<3->
+		Our similarity keyword search schemes meet the \textcolor{red}{non-adaptive} semantic security.
 	\end{theorem}
-	\begin{exampleblock}{}
+	\begin{exampleblock}<4->{}
 		Due to space limitation, we only give the proof for the basic approach.\\
 		The proof of other schemes follow similarly.
 	\end{exampleblock}
@@ -465,38 +468,38 @@ Dalian University of Technology \\
 		Given ${Tr({H_q})}$, it can simulate a view $V_q^*$ indistinguishable from cloud server's view ${V_K}({H_q})$ with probability negligibly close to 1, for any $q \in \mathbb{N}$, any ${H_q}$ and randomly chosen $K$.
 	\end{definition}
 	\begin{itemize}
-		\item $l$: the security parameter of the RBF $f(key, \cdot )$ \textcolor{blue}{(output length)}
-		\item  $\tau  = \max {\left\{ {\left| {{S_{{w_i},d}}} \right|} \right\}_{{w_i} \in W}}$
-		\item $\left| W \right|$, and size of padded ${FI{D_{{w_i}}}}$ are known to $\cal S$	
+		\item<2-> $l$: the security parameter of the RBF $f(key, \cdot )$ \textcolor{blue}{(output length)}
+		\item<3->  $\tau  = \max {\left\{ {\left| {{S_{{w_i},d}}} \right|} \right\}_{{w_i} \in W}}$
+		\item<4-> $\left| W \right|$, and size of padded ${FI{D_{{w_i}}}}$ are known to $\cal S$	
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Proof}
 	\begin{itemize}
-	\item For $q=0$, $\cal S$ builds $V_0^* = \left\{ {e_1^*,e_2^*, \ldots ,e_n^*,{{\cal I}^*}} \right\}$ such that $e_i^*$ is randomly chosen from ${\left\{ {0,1} \right\}^{\left| {{F_i}} \right|}}$ for $1 \le i \le n$.
-	\item Let ${{\cal I}^*} = ({T^*},{C^*})$.\\
+	\item<1-> For $q=0$, $\cal S$ builds $V_0^* = \left\{ {e_1^*,e_2^*, \ldots ,e_n^*,{{\cal I}^*}} \right\}$ such that $e_i^*$ is randomly chosen from ${\left\{ {0,1} \right\}^{\left| {{F_i}} \right|}}$ for $1 \le i \le n$.
+	\item<2-> Let ${{\cal I}^*} = ({T^*},{C^*})$.\\
 	${T^*}[i]$ and ${C^*}[i]$ : the $i$-th row entry in ${T^*}$ and ${C^*}$.
 	\begin{itemize}
-		\item To generate ${T^*}$,for $1 \le i \le \tau \left| W \right|$, $\cal S$ selects a random $t_i^* \in {\left\{ {0,1} \right\}^l}$, and sets ${T^*}[i] = t_i^*$.
-		\item To generate ${C^*}$,for $1 \le i \le \tau \left| W \right|$, $\cal S$ selects a random $c_i^* \in {\left\{ {0,1} \right\}^{\left| {FI{D_{{w_i}}}} \right|}}$, and sets ${C^*}[i] = c_i^*$.
+		\item<3-> To generate ${T^*}$,for $1 \le i \le \tau \left| W \right|$, $\cal S$ selects a random $t_i^* \in {\left\{ {0,1} \right\}^l}$, and sets ${T^*}[i] = t_i^*$.
+		\item<4-> To generate ${C^*}$,for $1 \le i \le \tau \left| W \right|$, $\cal S$ selects a random $c_i^* \in {\left\{ {0,1} \right\}^{\left| {FI{D_{{w_i}}}} \right|}}$, and sets ${C^*}[i] = c_i^*$.
 	\end{itemize}
-	\item Due to the semantic security of the symmetric encryption, no probabilistic polynomial-time (P.P.T.) adversary can distinguish between ${e_i}$ and $e_i^*$, or between ${Enc(s{k_{w{'_i}}},FI{D_{{w_i}}})}$ and $c_i$.
-	\item Also due to the pseudo-randomness of the trapdoor function, no P.P.T. adversary can distinguish between $f(x,w{'_i})$ and a random string $t_i^*$.
-	\item Thus, ${V_K}({H_0})$and $V_0^*$ are indistinguishable.
+	\item<5-> Due to the semantic security of the symmetric encryption, no probabilistic polynomial-time \textcolor{grey}{(P.P.T.)} adversary can distinguish between ${e_i}$ and $e_i^*$, or between ${Enc(s{k_{w{'_i}}},FI{D_{{w_i}}})}$ and $c_i$.
+	\item<6-> Also due to the pseudo-randomness of the trapdoor function, no \textcolor{grey}{P.P.T.} adversary can distinguish between $f(x,w{'_i})$ and a random string \textcolor{red}{$t_i^*$}.
+	\item<7-> Thus, ${V_K}({H_0})$and $V_0^*$ are \textcolor{red}{indistinguishable}.
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Proof}
 	\begin{itemize}
-		\item 	For $q \ge 1$, $\cal S$ builds $V_q^* = \left\{ {e_1^*,e_2^*, \ldots ,e_n^*,{{\cal I}^*},{{\left\{ {T_{w'}^*} \right\}}_{w' \in \left\{ {{S_{{w^1},d}}, \ldots ,{S_{{w^q},d}}} \right\}}}} \right\}$
+		\item<1-> 	For $q \ge 1$, $\cal S$ builds $V_q^* = \left\{ {e_1^*,e_2^*, \ldots ,e_n^*,{{\cal I}^*},{{\left\{ {T_{w'}^*} \right\}}_{w' \in \left\{ {{S_{{w^1},d}}, \ldots ,{S_{{w^q},d}}} \right\}}}} \right\}$
 				\begin{itemize}
 					\item $e_i^*$ is still randomly drawn from ${\left\{ {0,1} \right\}^{\left| {{F_i}} \right|}}$ for $1 \le i \le n$.
 				\end{itemize}
-		\item Let ${{\cal I}^*} = ({T^*},{C^*})$.
-        \item the result ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed({w_i},{w^j}) \le d}}$ for the $j$-th search request is the union of file identifiers in the matched entries of the index
+		\item<2-> Let ${{\cal I}^*} = ({T^*},{C^*})$.
+        \item<3-> the result ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed({w_i},{w^j}) \le d}}$ for the $j$-th search request is the union of file identifiers in the matched entries of the index
 		\begin{itemize}
-			\item ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed({w_i},{w^j}) \le d}}$ can be rewritten as $\bigcup\nolimits_{k = 1}^{{\alpha _j}} {FI{D_{{w_{j,k}}}}} $
-			\item ${\alpha _j}$ denotes the number of matches for the $j$-th search
+			\item<4-> ${\left\{ {FI{D_{{w_i}}}} \right\}_{ed({w_i},{w^j}) \le d}}$ can be rewritten as $\bigcup\nolimits_{k = 1}^{{\alpha _j}} {FI{D_{{w_{j,k}}}}} $
+			\item<5-> ${\alpha _j}$ denotes the number of matches for the $j$-th search
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -505,14 +508,14 @@ Dalian University of Technology \\
 	\begin{itemize}
 		\item To build the first trapdoor set ${\left\{ {T_{w'}^*} \right\}_{w' \in \left\{ {{S_{{w^1},d}}} \right\}}}$ for search input $w^1$,the simulator $\cal S$ does the following:
 		\begin{itemize}
-			\item Select ${\alpha_1}$ random strings $t_{1,1}^*, \ldots ,t_{1,{\alpha _1}}^* \in {\left\{ {0,1} \right\}^l}$ and set them to ${\alpha _1}$ non-assigned entries ${T^*}[{i_{1,1}}], \ldots ,{T^*}[{i_{1,{\alpha _1}}}]$.
-			\item Select ${\alpha_1}$ random strings $\rho _{1,1}^*, \ldots \rho _{1,{\alpha _i}}^* \in {\left\{ {0,1} \right\}^l}$ and set ${C^*}[{i_{1,k}}] = Enc(\rho _{1,k}^*,FI{D_{{w_i},k}})$ for $1 \le k \le {\alpha _1}$
-			\item Set remaining $\tau  - {\alpha _1}$ trapdoors as random value pairs
+			\item<2-> Select ${\alpha_1}$ random strings $t_{1,1}^*, \ldots ,t_{1,{\alpha _1}}^* \in {\left\{ {0,1} \right\}^l}$ and set them to ${\alpha _1}$ non-assigned entries ${T^*}[{i_{1,1}}], \ldots ,{T^*}[{i_{1,{\alpha _1}}}]$.
+			\item<3-> Select ${\alpha_1}$ random strings $\rho _{1,1}^*, \ldots \rho _{1,{\alpha _i}}^* \in {\left\{ {0,1} \right\}^l}$ and set ${C^*}[{i_{1,k}}] = Enc(\rho _{1,k}^*,FI{D_{{w_i},k}})$ for $1 \le k \le {\alpha _1}$
+			\item<4-> Set remaining $\tau  - {\alpha _1}$ trapdoors as random value pairs
 			$(t_{1,k}^*,\rho _{1,k}^*) \in {\left\{ {0,1} \right\}^l} \times {\left\{ {0,1} \right\}^l}$ for ${\alpha _1} \le k \le \tau $ .
 		\end{itemize}
-		\item For trapdoor simulation of $w^j$ for $2 \le j \le q$, if $\left| {{\prod _q}[i,j]} \right| = 0$ for all $i < j$, the simulator repeats the same process as
+		\item<5-> For trapdoor simulation of $w^j$ for $2 \le j \le q$, if $\left| {{\prod _q}[i,j]} \right| = 0$ for all $i < j$, the simulator repeats the same process as
 		simulating trapdoors for $w^1$.
-		\item Otherwise, let ${\beta _j}$ denotes the number of file identifier list in ${\left\{ {FI{D_{{w_j},k}}} \right\}_{1 \le k \le {\alpha _j}}}$, which have
+		\item<6-> Otherwise, let ${\beta _j}$ denotes the number of file identifier list in ${\left\{ {FI{D_{{w_j},k}}} \right\}_{1 \le k \le {\alpha _j}}}$, which have
 		been assigned already in ${\left\{ {FI{D_{{w_i},k}}} \right\}_{1 \le k \le {\alpha _i},i < j}}$.
 	\end{itemize}
 \end{frame}
@@ -520,25 +523,23 @@ Dalian University of Technology \\
 \begin{frame}{Proof}
 	Next, $\cal S$ does:
 	\begin{itemize}
-		\item Choose ${\beta _j}$ trapdoors from existing ${\left\{ {T_{w'}^*} \right\}_{w' \in \left\{ {{s_{{w^i},d}}} \right\},i < j}}$ that match to the common ${\beta _j}$ file identifier list of ${\left\{ {FI{D_{{w_j},k}}} \right\}_{1 \le k \le {\alpha _j}}} \cap (\bigcup\nolimits_{i = 1}^{j - 1} {{{\left\{ {FI{D_{{w_i},k}}} \right\}}_{1 \le k \le {\alpha _i}}}} )$, and assign them to trapdoor simulation of $w^j$.
-		\item If $\alpha_j > \beta_j$, the simulator $\cal S$ builds $\alpha_j - \beta_j$ entries in ${{{\cal I}^*}}$ via the same process as simulating trapdoors for $W^1$.
-		\item $\cal S$ further checks ${{\prod _q}[i,j]}$ for $i < j$, finds from already generated ${\left\{ {T_{w'}^*} \right\}_{w' \in \left\{ {{s_{{w^i},d}}} \right\},i < j}}$ the common ${\gamma _j}$ trapdoors that do not have matched entries in index ${{{\cal I}^*}}$, and assigns them to the current trapdoor simulation of $w^j$.
-		\item Set remaining $\tau  - {\alpha _j} - {\gamma _j}$ trapdoors as random value pairs from ${\left\{ {0,1} \right\}^l} \times {\left\{ {0,1} \right\}^l}$.
+		\item<2-> Choose ${\beta _j}$ trapdoors from existing ${\left\{ {T_{w'}^*} \right\}_{w' \in \left\{ {{s_{{w^i},d}}} \right\},i < j}}$ that match to the common ${\beta _j}$ file identifier list of ${\left\{ {FI{D_{{w_j},k}}} \right\}_{1 \le k \le {\alpha _j}}} \cap (\bigcup\nolimits_{i = 1}^{j - 1} {{{\left\{ {FI{D_{{w_i},k}}} \right\}}_{1 \le k \le {\alpha _i}}}} )$, and assign them to trapdoor simulation of $w^j$.
+		\item<3-> If $\alpha_j > \beta_j$, the simulator $\cal S$ builds $\alpha_j - \beta_j$ entries in ${{{\cal I}^*}}$ via the same process as simulating trapdoors for $w^1$.
+		\item<4-> $\cal S$ further checks ${{\prod _q}[i,j]}$ for $i < j$, finds from already generated ${\left\{ {T_{w'}^*} \right\}_{w' \in \left\{ {{s_{{w^i},d}}} \right\},i < j}}$ the common ${\gamma _j}$ trapdoors that do not have matched entries in index ${{{\cal I}^*}}$, and assigns them to the current trapdoor simulation of $w^j$.
+		\item<5-> Set remaining $\tau  - {\alpha _j} - {\gamma _j}$ trapdoors as random value pairs from ${\left\{ {0,1} \right\}^l} \times {\left\{ {0,1} \right\}^l}$.
  \end{itemize}
 \end{frame}
 
 \begin{frame}{proof}
 	Thus
-	\begin{proof}
+	\begin{proof}<2->
 		\begin{itemize}
-			\item The correctness of the constructed view is easy to demonstrate by searching on ${{{\cal I}^*}}$ via ${\left\{ {T_{w'}^*} \right\}_{w' \in {s_{{w^i},d}}}}$ for each $i$.
-			\item There is no P.P.T. adversary can distinguish between $V_q^*$ and ${V_K}({H_q})$
-			\item In particular, the simulated encrypted ciphertext
-			is indistinguishable due to the semantic security of the
-			symmetric encryption.
-			\item The indistinguishability of index and
-			trapdoors is based on the indistinguishability of the pseudorandom
-			function output and a random string.
+			\item<3-> The correctness of the constructed view is easy to demonstrate by searching on ${{{\cal I}^*}}$ via ${\left\{ {T_{w'}^*} \right\}_{w' \in {s_{{w^i},d}}}}$ for each $i$.
+			\item<4-> There is no \textcolor{grey}{P.P.T.} adversary can \textcolor{red}{distinguish} between $V_q^*$ and ${V_K}({H_q})$
+			\item<5-> In particular, the simulated encrypted ciphertext
+			is indistinguishable due to the \textcolor{blue}{semantic security of the
+			symmetric encryption}.
+			\item<6-> The indistinguishability of index and trapdoors is based on the indistinguishability of the \textcolor{blue}{pseudorandom function output} and a \textcolor{blue}{random string}.
 		\end{itemize}
 	\end{proof}
 \end{frame}
@@ -565,7 +566,7 @@ Dalian University of Technology \\
 \section{Experiment}
 
 \begin{frame}{Experiment}
-		\begin{block}{Experiment Design}
+		\begin{block}<2->{Experiment Design}
 			\begin{itemize}
 				\item A real data set: RFC, 5,731 plaintext files, 277MB
 				\item C programming language 
@@ -573,7 +574,7 @@ Dalian University of Technology \\
 				\item Cloud side:Amazon Elastic Computing Cloud(EC2)
 			\end{itemize}
 		\end{block}
-		\begin{exampleblock}{Note}
+		\begin{exampleblock}<3->{Note}
 			In our experiment the dominant factor affecting the performance is th number of \textcolor{red}{unique keywords} to be indexed, not the \textcolor[rgb]{0.1,0.7,0.2}{file collection size}.
 		\end{exampleblock}
 \end{frame}
@@ -583,7 +584,7 @@ Dalian University of Technology \\
         \includegraphics[width=0.8\textwidth]{subfig1.jpg}
         \caption{Similarity set construction time using wildcard-based approach with different choices of edit distance $d$}
 	\end{figure}
-	\begin{block}{}
+	\begin{block}<2->{}
 		The construction time increases \textcolor{blue}{linearly} with the number of keywords.
 	\end{block}
 \end{frame}
@@ -596,13 +597,13 @@ Dalian University of Technology \\
 		\caption{Time cost for searchable index construction with different choices of edit distance $d$}
 	\end{figure}
 	\column{.5\textwidth}
-	    \begin{alertblock}{}
+	    \begin{alertblock}<2->{}
 	    	For completeness, we also include the index building time of existing SSE as a \textcolor{red}{baseline} for comparison here.
 	    \end{alertblock}
-	    \begin{exampleblock}{}
+	    \begin{exampleblock}<3->{}
 	    	The whole index construction is just a one-time cost and can be conducted off-line
 	    \end{exampleblock}
-	\begin{block}{}
+	\begin{block}<4->{}
 		Similar to the similarity keyword set construction, the index construction time increases \textcolor{blue}{linearly} with the number of distinct keywords.
 	\end{block}
 	\end{columns}
@@ -616,14 +617,14 @@ Dalian University of Technology \\
 		\caption{Storage cost for searchable index construction with different choices of edit distance $d$}	
 	\end{figure}
 	\column{.5\textwidth}
-	\begin{exampleblock}{}
+	\begin{exampleblock}<2->{}
 		Again, our approach consumes more storage space than the baseline due to the \textcolor[rgb]{0.1,0.7,0.2}{multi-way tree structure} and the \textcolor[rgb]{0.1,0.7,0.2}{additional entries} in the index corresponding to the similarity keywords
 	\end{exampleblock}
-	\begin{block}{}
+	\begin{block}<3->{}
 		But can be deemed as \textcolor{blue}{reasonable} cost of supporting similarity search
 	\end{block}
-	\begin{alertblock}{}
-		"average keyword length" also \textcolor{red}{sightly} influence the time and space cost of building searchable index.
+	\begin{alertblock}<4->{}
+		"Average keyword length" also \textcolor{red}{sightly} influence the time and space cost of building searchable index.
 	\end{alertblock}
 	\end{columns}
 \end{frame}
@@ -633,10 +634,10 @@ Dalian University of Technology \\
 		\includegraphics[width=.75\textwidth]{subfig4.jpg}
 		%\caption{Evaluation for search cost and file retrieval}
 	\end{figure}
-	\begin{block}{}
+	\begin{block}<2->{}
 		The proposed  mechanism cost \textcolor{blue}{constant} search time.
 	\end{block}
-	\begin{exampleblock}{}
+	\begin{exampleblock}<3->{}
 		Cost for results retrieval and decryption is plainly determined by the \textcolor[rgb]{0.1,0.7,0.2}{number} of retrieved results
 	\end{exampleblock}
 \end{frame}
