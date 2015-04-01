@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  31 MAR 2015 20:25
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  1 APR 2015 11:05
 entering extended mode
 **report_3.tex
 
@@ -975,7 +975,7 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [10
 
-] <algo1.jpg, id=172, 369.63094pt x 382.42876pt>
+] <algo1.jpg, id=171, 369.63094pt x 382.42876pt>
 File: algo1.jpg Graphic file (type jpg)
  <use algo1.jpg>
 Package pdftex.def Info: algo1.jpg used on input line 283.
@@ -1016,7 +1016,7 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [15
 
-] <fig2.jpg, id=220, 326.72063pt x 261.97874pt>
+] <fig2.jpg, id=218, 326.72063pt x 261.97874pt>
 File: fig2.jpg Graphic file (type jpg)
  <use fig2.jpg>
 Package pdftex.def Info: fig2.jpg used on input line 384.
@@ -1045,7 +1045,7 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [17
 
-] <algo2.jpg, id=235, 408.02437pt x 363.60844pt>
+] <algo2.jpg, id=232, 408.02437pt x 363.60844pt>
 File: algo2.jpg Graphic file (type jpg)
  <use algo2.jpg>
 Package pdftex.def Info: algo2.jpg used on input line 416.
@@ -1135,7 +1135,7 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [29
 
-] <subfig1.jpg, id=327, 575.14874pt x 288.3272pt>
+] <subfig1.jpg, id=321, 575.14874pt x 288.3272pt>
 File: subfig1.jpg Graphic file (type jpg)
  <use subfig1.jpg>
 Package pdftex.def Info: subfig1.jpg used on input line 590.
@@ -1148,7 +1148,7 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [30
 
  <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/subf
-ig1.jpg>] <subfig2.jpg, id=335, 274.02374pt x 280.04625pt>
+ig1.jpg>] <subfig2.jpg, id=329, 274.02374pt x 280.04625pt>
 File: subfig2.jpg Graphic file (type jpg)
 
 <use subfig2.jpg>
@@ -1162,7 +1162,7 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [31
 
  <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/subf
-ig2.jpg>] <subfig3.jpg, id=343, 273.27094pt x 270.25969pt>
+ig2.jpg>] <subfig3.jpg, id=338, 273.27094pt x 270.25969pt>
 File: subfig3.jpg Graphic file (type jpg)
 
 <use subfig3.jpg>
@@ -1176,7 +1176,7 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [32
 
  <E:/system_secruity_paper_presentation/system_secruity_paper_presentation/subf
-ig3.jpg>] <subfig4.jpg, id=351, 578.91281pt x 270.25969pt>
+ig3.jpg>] <subfig4.jpg, id=346, 578.91281pt x 270.25969pt>
 File: subfig4.jpg Graphic file (type jpg)
 
 <use subfig4.jpg>
@@ -1220,48 +1220,31 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 15897 strings out of 495354
- 295416 string characters out of 3183860
- 386070 words of memory out of 3000000
+ 15891 strings out of 495354
+ 295341 string characters out of 3183860
+ 385985 words of memory out of 3000000
  18581 multiletter control sequences out of 15000+200000
  17287 words of font info for 67 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,16n,63p,633b,1097s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Navigation120} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Navigation119} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Navigation74} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Navigation61} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Navigation48} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Navigation136} has been referenced but does not exi
-st, replaced by a fixed one
-
-<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts
-/type1/public/amsfonts/cmextra/cmex8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D
-:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/CTEX/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmmi7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/CTEX/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><D:/CTEX/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmss17.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8
-.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/CTEX/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmssi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmssi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmsy7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report_3.pdf (34 pages, 1818237 bytes).
+<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cmextra/cmex8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb>
+<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><D:/CTEX/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmss17.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+s8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/CTEX/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><D:/CTEX/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmssi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b>
+Output written on report_3.pdf (34 pages, 1817671 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 85 named destinations out of 1000 (max. 500000)
+ 440 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
  223 words of extra memory for PDF output out of 10000 (max. 10000000)
 

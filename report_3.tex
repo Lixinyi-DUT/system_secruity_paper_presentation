@@ -412,7 +412,7 @@ Dalian University of Technology \\
 	\begin{figure}
 		\includegraphics[width=0.5\textwidth]{algo2.jpg}
 	\end{figure}
-     The search cost at the server side is only \textcolor{red}{${\cal O}(1)$} (a \text	color{red}{constant} related to $l/\theta$).
+     The search cost at the server side is only \textcolor{red}{${\cal O}(1)$} (a \textcolor{red}{constant} related to $l/\theta$).
 \end{frame}
 
 \section{Security Analysis}
@@ -468,7 +468,7 @@ Dalian University of Technology \\
 		Given ${Tr({H_q})}$, it can simulate a view $V_q^*$ indistinguishable from cloud server's view ${V_K}({H_q})$ with probability negligibly close to 1, for any $q \in \mathbb{N}$, any ${H_q}$ and randomly chosen $K$.
 	\end{definition}
 	\begin{itemize}
-		\item<2-> $l$: the security parameter of the RBF $f(key, \cdot )$ \textcolor{blue}{(output length)}
+		\item<2-> $l$: the security parameter of the PRF $f(key, \cdot )$ \textcolor{blue}{(output length)}
 		\item<3->  $\tau  = \max {\left\{ {\left| {{S_{{w_i},d}}} \right|} \right\}_{{w_i} \in W}}$
 		\item<4-> $\left| W \right|$, and size of padded ${FI{D_{{w_i}}}}$ are known to $\cal S$	
 	\end{itemize}
@@ -555,7 +555,7 @@ Dalian University of Technology \\
 			 \textbf{Preprocessing} & ${\cal O}(\left| W \right|)$ & ${\cal O}(\tau \left| W \right|)$ & ${\cal O}(\tau \left| W \right|)$ \\
 			 \textbf{Index size} & ${\cal O}(\left| W \right|)$ & ${\cal O}(\tau \left| W \right|)$ & ${\cal O}(\tau \left| W \right|)$ \\
 			 \textbf{Search cost} & ${\cal O}(1)$ & ${\cal O}(\tau \left| W \right|)$ & \textcolor{red}{${\cal O}(1)$}  \\
-			 \textbf{Similarity search} & No & Yes & No \\
+			 \textbf{Similarity search} & No & Yes & Yes \\
 			\bottomrule
 		\end{tabular}
 		\caption{Comparison of SSE schemes}
